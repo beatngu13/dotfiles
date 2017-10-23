@@ -78,19 +78,10 @@ function rt() {
     fi
 }
 
-# Fast builds.
-function rtinstall() {
-    if [ $1 == "O1" ]
-    then
-        echo "Executing clean install without tests, Proguard, and license download."
-        mvn clean install -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true
-    elif [ $1 == "O2" ]
-    then
-        echo "Executing offline install without tests, Proguard, license download, and no info logs."
-        mvn -o install -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true | grep -v "^\[INFO"
-    else
-        echo "Unknow parameter '$1'."
-    fi
+# Fast build.
+function rtbuild() {
+    echo "Executing offline install without tests, Proguard, license download, and no info logs."
+    mvn -o install -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true | grep -v "^\[INFO"
 }
 
 # Update ReTest installations.
