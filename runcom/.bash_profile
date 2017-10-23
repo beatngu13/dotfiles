@@ -89,6 +89,8 @@ function rtup() {
     read -s -p "username:password? " CREDENTIALS
     cd ${RETEST_HOME}
 
+    # TODO Use a lambda.
+
     echo "Updating nightly ..."
     curl --remote-name --user $CREDENTIALS https://retest.de/update/retest-demo-nightly-latest.zip
     rm -rf ${RETEST_NIGHTLY_LATEST}/*
