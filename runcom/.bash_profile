@@ -50,7 +50,7 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 # Home variables.
 export JAVA_1_6_HOME='/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home'
-export RETEST_HOME='/opt/retest'
+export RETEST_ROOT='/opt/retest'
 export RETEST_NIGHTLY_LATEST='/opt/retest/retest-demo-nightly-latest'
 export RETEST_STABLE_LATEST='/opt/retest/retest-demo-stable-latest'
 export VAGRANT_SERVER_URL="http://192.168.178.51/boxes"
@@ -58,7 +58,7 @@ export VAGRANT_SERVER_URL="http://192.168.178.51/boxes"
 export PATH=\
 ${PATH}/bin:\
 ${JAVA_1_6_HOME}/bin:\
-${RETEST_HOME}:\
+${RETEST_ROOT}:\
 ${RETEST_NIGHTLY_LATEST}:\
 ${RETEST_STABLE_LATEST}:\
 ${VAGRANT_SERVER_URL}
@@ -86,19 +86,19 @@ function rtbuild() {
 
 # Update ReTest installations.
 function rtup() {
-    read -s -p "username:password? " CREDENTIALS
-    cd ${RETEST_HOME}
+    read -s -p "username:password? " credentials
+    cd ${RETEST_ROOT}
 
     # TODO Use a lambda.
 
     echo "Updating nightly ..."
-    curl --remote-name --user $CREDENTIALS https://retest.de/update/retest-demo-nightly-latest.zip
+    curl --remote-name --user $credentials https://retest.de/update/retest-demo-nightly-latest.zip
     rm -rf ${RETEST_NIGHTLY_LATEST}/*
     unzip -o -q retest-demo-nightly-latest.zip -d ${RETEST_NIGHTLY_LATEST}
     rm retest-demo-nightly-latest.zip
 
     echo "Updating stable ..."
-    curl --remote-name --user $CREDENTIALS https://retest.de/update/retest-demo-stable-latest.zip
+    curl --remote-name --user $credentials https://retest.de/update/retest-demo-stable-latest.zip
     rm -rf ${RETEST_STABLE_LATEST}/*
     unzip -o -q retest-demo-stable-latest.zip -d ${RETEST_STABLE_LATEST}
     rm retest-demo-stable-latest.zip
