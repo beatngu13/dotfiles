@@ -51,9 +51,9 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 # Home variables.
 export JAVA_1_6_HOME='/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home'
 export RETEST_ROOT='/opt/retest'
-export RETEST_NIGHTLY_LATEST='/opt/retest/retest-demo-nightly-latest'
-export RETEST_BETA_LATEST='/opt/retest/retest-demo-beta-latest'
-export RETEST_STABLE_LATEST='/opt/retest/retest-demo-stable-latest'
+export RETEST_NIGHTLY_LATEST=${RETEST_ROOT}'/retest-demo-nightly-latest'
+export RETEST_BETA_LATEST=${RETEST_ROOT}'/retest-demo-beta-latest'
+export RETEST_STABLE_LATEST=${RETEST_ROOT}'/retest-demo-stable-latest'
 export VAGRANT_SERVER_URL="http://192.168.178.51/boxes"
 
 export PATH=\
