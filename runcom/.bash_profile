@@ -37,7 +37,7 @@ function brewup() {
     echo "Upgrading brew ..."
     brew upgrade
     echo "Upgrading casks ..."
-    brew cask list | xargs brew cask reinstall
+    brew cu --all
 }
 
 # Init jenv (execute "jenv enable-plugin export" if home variables are not set).
