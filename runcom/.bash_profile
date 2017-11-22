@@ -52,6 +52,7 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 export JAVA_1_6_HOME='/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home'
 export RETEST_ROOT='/opt/retest'
 export RETEST_NIGHTLY_LATEST='/opt/retest/retest-demo-nightly-latest'
+export RETEST_BETA_LATEST='/opt/retest/retest-demo-beta-latest'
 export RETEST_STABLE_LATEST='/opt/retest/retest-demo-stable-latest'
 export VAGRANT_SERVER_URL="http://192.168.178.51/boxes"
 
@@ -60,6 +61,7 @@ ${PATH}/bin:\
 ${JAVA_1_6_HOME}/bin:\
 ${RETEST_ROOT}:\
 ${RETEST_NIGHTLY_LATEST}:\
+${RETEST_BETA_LATEST}:\
 ${RETEST_STABLE_LATEST}:\
 ${VAGRANT_SERVER_URL}
 
@@ -69,6 +71,10 @@ function rt() {
     then
         echo "Launching ReTest version:" $(cat ${RETEST_NIGHTLY_LATEST}/retest/version.txt) "..."
         sh ${RETEST_NIGHTLY_LATEST}/retest/retest-gui.sh
+    elif [ $1 == "beta" ]
+    then
+        echo "Launching ReTest version:" $(cat ${RETEST_BETA_LATEST}/retest/version.txt) "..."
+        sh ${RETEST_BETA_LATEST}/retest/retest-gui.sh
     elif [ $1 == "stable" ]
     then
         echo "Launching ReTest version:" $(cat ${RETEST_STABLE_LATEST}/retest/version.txt) "..."
@@ -98,6 +104,9 @@ function rtup() {
 
     echo "Updating nightly ..."
     update retest-demo-nightly-latest.zip ${RETEST_NIGHTLY_LATEST}
+
+    echo "Updating beta ..."
+    update retest-demo-beta-latest.zip ${RETEST_BETA_LATEST}
 
     echo "Updating stable ..."
     update retest-demo-stable-latest.zip ${RETEST_STABLE_LATEST}
