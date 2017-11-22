@@ -69,19 +69,17 @@ ${VAGRANT_SERVER_URL}
 function rt() {
     if [ $1 == "nightly" ]
     then
-        echo "Launching ReTest version:" $(cat ${RETEST_NIGHTLY_LATEST}/retest/version.txt) "..."
-        sh ${RETEST_NIGHTLY_LATEST}/retest/retest-gui.sh
+        VERSION=${RETEST_NIGHTLY_LATEST}
     elif [ $1 == "beta" ]
     then
-        echo "Launching ReTest version:" $(cat ${RETEST_BETA_LATEST}/retest/version.txt) "..."
-        sh ${RETEST_BETA_LATEST}/retest/retest-gui.sh
+        VERSION=${RETEST_BETA_LATEST}
     elif [ $1 == "stable" ]
     then
-        echo "Launching ReTest version:" $(cat ${RETEST_STABLE_LATEST}/retest/version.txt) "..."
-        sh ${RETEST_STABLE_LATEST}/retest/retest-gui.sh
-    else
-        echo "Unknow parameter '$1'."
+        VERSION=${RETEST_STABLE_LATEST}
     fi
+    
+    echo "Launching ReTest version:" $(cat ${VERSION}/retest/version.txt) "..."
+    sh ${VERSION}/retest/retest-gui.sh
 }
 
 # Fast build.
