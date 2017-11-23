@@ -3,7 +3,7 @@
 ################################################################################
 
 # Edit ~/.bash_profile in Atom and source afterwards.
-alias bashedit='${EDITOR} ~/.bash_profile; source ~/.bash_profile'
+alias bashedit='${EDITOR} ~/.bash_profile'
 # Port scan: stroke <address> <startPort> <endPort>.
 alias stroke='/System/Library/CoreServices/Applications/Network Utility.app/Contents/Resources/stroke'
 # Show hidden files.
