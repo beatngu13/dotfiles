@@ -16,14 +16,12 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Home variables.
-export ANT_HOME='/opt/Ant/apache-ant-1.9.6'
 export EDITOR='atom'
 export M2_HOME='/opt/Maven/apache-maven-3.2.5'
 export PYTHON_HOME='/Library/Frameworks/Python.framework/Versions/3.5'
 
 export PATH=\
 ${PATH}/bin:\
-${ANT_HOME}/bin:\
 ${EDITOR}:\
 ${M2_HOME}/bin:\
 ${PYTHON_HOME}
@@ -47,6 +45,7 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 ################################################################################
 
 # Home variables.
+export ANT_HOME='/opt/Ant/apache-ant-1.9.6'
 export JAVA_1_6_HOME='/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home'
 export RETEST_ROOT='/opt/retest'
 export RETEST_NIGHTLY_LATEST=${RETEST_ROOT}'/retest-demo-nightly-latest'
@@ -56,6 +55,7 @@ export VAGRANT_SERVER_URL="http://192.168.178.51/boxes"
 
 export PATH=\
 ${PATH}/bin:\
+${ANT_HOME}/bin:\
 ${JAVA_1_6_HOME}/bin:\
 ${RETEST_ROOT}:\
 ${RETEST_NIGHTLY_LATEST}:\
@@ -75,7 +75,7 @@ function rt() {
     then
         VERSION=${RETEST_STABLE_LATEST}
     fi
-    
+
     echo "Launching ReTest version:" $(cat ${VERSION}/retest/version.txt) "..."
     sh ${VERSION}/retest/retest-gui.sh
 }
