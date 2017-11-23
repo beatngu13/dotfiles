@@ -88,11 +88,11 @@ function rtbuild() {
 
 # Update retest installations.
 function rtup() {
-    read -s -p "username:password? " credentials
+    read -s -p "username:password? " CREDENTIALS
     cd ${RETEST_ROOT}
 
     update() {
-        curl --remote-name --user $credentials https://retest.de/update/$1
+        curl --remote-name --user $CREDENTIALS https://retest.de/update/$1
         rm -rf $2/*
         unzip -o -q $1 -d $2
         rm $1
