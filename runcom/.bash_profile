@@ -41,7 +41,7 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 
 ################################################################################
-# ReTest                                                                       #
+# retest                                                                       #
 ################################################################################
 
 # Home variables.
@@ -76,7 +76,7 @@ function rt() {
         VERSION=${RETEST_STABLE_LATEST}
     fi
 
-    echo "Launching ReTest version:" $(cat ${VERSION}/retest/version.txt) "..."
+    echo "Launching retest version:" $(cat ${VERSION}/retest/version.txt) "..."
     sh ${VERSION}/retest/retest-gui.sh
 }
 
@@ -86,7 +86,7 @@ function rtbuild() {
     mvn -o install -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true | grep -v "^\[INFO"
 }
 
-# Update ReTest installations.
+# Update retest installations.
 function rtup() {
     read -s -p "username:password? " credentials
     cd ${RETEST_ROOT}
