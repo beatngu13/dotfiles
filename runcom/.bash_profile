@@ -18,7 +18,6 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # Home variables.
 export ANT_HOME='/opt/Ant/apache-ant-1.9.6'
 export EDITOR='atom'
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home'
 export M2_HOME='/opt/Maven/apache-maven-3.2.5'
 export PYTHON_HOME='/Library/Frameworks/Python.framework/Versions/3.5'
 
@@ -26,7 +25,6 @@ export PATH=\
 ${PATH}/bin:\
 ${ANT_HOME}/bin:\
 ${EDITOR}:\
-${JAVA_HOME}/bin:\
 ${M2_HOME}/bin:\
 ${PYTHON_HOME}
 
