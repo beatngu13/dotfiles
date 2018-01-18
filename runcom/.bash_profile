@@ -2,8 +2,8 @@
 # Private                                                                      #
 ################################################################################
 
-# Edit ~/.bash_profile in Atom and source afterwards.
-alias bashedit='${EDITOR} ~/.bash_profile'
+# Edit .bash_profile from dotfiles repo.
+alias bashedit='${EDITOR} ~/Dev/Workspaces/dotfiles/runcom/.bash_profile'
 # Port scan: stroke <address> <startPort> <endPort>.
 alias stroke='/System/Library/CoreServices/Applications/Network Utility.app/Contents/Resources/stroke'
 # Show hidden files.
