@@ -86,16 +86,37 @@ function rtbuild() {
     mvn clean install -o -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true | grep -v "^\[INFO"
 }
 
+# Clean retest workspaces.
+function rtclean() {
+    cd ${RETEST_ROOT}
+
+    clean() {
+        rm -rf $2/*
+        unzip -o -q $1 -d $2
+    }
+
+    echo "Cleaning nightly ..."
+    clean retest-demo-nightly-latest.zip ${RETEST_NIGHTLY_LATEST}
+
+    echo "Cleaning beta ..."
+    clean retest-demo-beta-latest.zip ${RETEST_BETA_LATEST}
+
+    echo "Cleaning stable ..."
+    clean retest-demo-stable-latest.zip ${RETEST_STABLE_LATEST}
+
+    cd -
+}
+
 # Update retest installations.
 function rtup() {
     read -s -p "username:password? " CREDENTIALS
     cd ${RETEST_ROOT}
 
     update() {
+        rm $1
         curl --remote-name --user $CREDENTIALS https://retest.de/update/$1
         rm -rf $2/*
         unzip -o -q $1 -d $2
-        rm $1
     }
 
     echo "Updating nightly ..."
