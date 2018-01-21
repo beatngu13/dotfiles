@@ -92,23 +92,23 @@ function rtbuild() {
     mvn clean install -o -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true | grep -v "^\[INFO"
 }
 
-# Clean retest workspaces.
-function rtclean() {
+# Reset retest installations.
+function rtreset() {
     cd ${RETEST_ROOT_PATH}
 
-    clean() {
+    reset() {
         rm -rf $2/*
         unzip -o -q $1 -d $2
     }
 
-    echo "Cleaning nightly ..."
-    clean ${RETEST_NIGHTLY_LATEST_ZIP} ${RETEST_NIGHTLY_LATEST_PATH}
+    echo "Resetting nightly ..."
+    reset ${RETEST_NIGHTLY_LATEST_ZIP} ${RETEST_NIGHTLY_LATEST_PATH}
 
-    echo "Cleaning beta ..."
-    clean ${RETEST_BETA_LATEST_ZIP} ${RETEST_BETA_LATEST_PATH}
+    echo "Resetting beta ..."
+    reset ${RETEST_BETA_LATEST_ZIP} ${RETEST_BETA_LATEST_PATH}
 
-    echo "Cleaning stable ..."
-    clean ${RETEST_STABLE_LATEST_ZIP} ${RETEST_STABLE_LATEST_PATH}
+    echo "Resetting stable ..."
+    reset ${RETEST_STABLE_LATEST_ZIP} ${RETEST_STABLE_LATEST_PATH}
 
     cd -
 }
