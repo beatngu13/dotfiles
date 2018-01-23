@@ -88,7 +88,7 @@ function rt() {
 
 # Fast build.
 function rtbuild() {
-    echo "Executing clean install offline without tests, Proguard, license download, and no info logs ..."
+    echo "Executing clean install (offline without tests, obfuscation, license download, and info logs) ..."
     mvn clean install -o -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true | grep -v "^\[INFO"
 }
 
