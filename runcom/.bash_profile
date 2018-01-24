@@ -1,11 +1,11 @@
 # Edit .bash_profile from dotfiles repo.
 alias bashedit='${EDITOR} ~/Dev/Workspaces/dotfiles/runcom/.bash_profile'
-# Port scan: stroke <address> <startPort> <endPort>.
-alias stroke='/System/Library/CoreServices/Applications/Network Utility.app/Contents/Resources/stroke'
 # Show hidden files.
 alias showall='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
 # Hide hidden files.
 alias hideall='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
+# Port scan: stroke <address> <startPort> <endPort>.
+alias stroke='/System/Library/CoreServices/Applications/Network Utility.app/Contents/Resources/stroke'
 
 # Enable and specify terminal colors.
 export CLICOLOR=1
