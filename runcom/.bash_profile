@@ -37,6 +37,6 @@ function brewup() {
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 # Source other dotfiles.
-for dotfile in "${DOTFILES_PATH}"/system/.*; do
-  [ -f "$dotfile" ] && . "$dotfile"
+for dotfile in ${DOTFILES_PATH}/system/.*; do
+  [ -f ${dotfile} ] && . ${dotfile}
 done

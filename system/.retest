@@ -67,7 +67,7 @@ function rtup() {
 
     update() {
         rm $1
-        curl --remote-name --user $credentials https://retest.de/update/$1
+        curl --remote-name --user ${credentials} https://retest.de/update/$1
         rm -rf $2/*
         unzip -o -q $1 -d $2
     }
