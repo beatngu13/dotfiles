@@ -1,10 +1,10 @@
 #!/bin/bash
 
-DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+dotfiles_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-ln -sfv "$DOTFILES_DIR/runcom/.bash_profile" ~
-source "$DOTFILES_DIR/runcom/.bash_profile"
+ln -sfv "$dotfiles_path/runcom/.bash_profile" ~
+source "$dotfiles_path/runcom/.bash_profile"
 
-ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
-ln -sfv "$DOTFILES_DIR/git/.gitconfig_retest" ~
-ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
+ln -sfv "$dotfiles_path/git/.gitconfig" ~
+ln -sfv "$dotfiles_path/git/.gitconfig_retest" ~
+ln -sfv "$dotfiles_path/git/.gitignore_global" ~
