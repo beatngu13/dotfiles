@@ -12,12 +12,14 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Home variables.
+export DOTFILES_PATH='~/Dev/Workspaces/dotfiles/'
 export EDITOR='atom'
 export M2_HOME='/opt/Maven/apache-maven-3.2.5'
 export PYTHON_HOME='/Library/Frameworks/Python.framework/Versions/3.5'
 
 export PATH=\
 ${PATH}/bin:\
+${DOTFILES_PATH}:\
 ${EDITOR}:\
 ${M2_HOME}/bin:\
 ${PYTHON_HOME}
@@ -36,6 +38,6 @@ function brewup() {
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 # Source other dotfiles.
-for dotfile in ~/Dev/Workspaces/dotfiles/system/.*; do
+for dotfile in "${DOTFILES_PATH}"/system/.*; do
   [ -f "$dotfile" ] && . "$dotfile"
 done
