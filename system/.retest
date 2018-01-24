@@ -18,13 +18,13 @@ ${JAVA_1_6_HOME}/bin
 
 # Quick start.
 function rt() {
-    if [ $1 == "nightly" ]
+    if [ "$1" == "nightly" ]
     then
         version=${RETEST_NIGHTLY_LATEST_PATH}
-    elif [ $1 == "beta" ]
+    elif [ "$1" == "beta" ]
     then
         version=${RETEST_BETA_LATEST_PATH}
-    elif [ $1 == "stable" ]
+    elif [ "$1" == "stable" ]
     then
         version=${RETEST_STABLE_LATEST_PATH}
     fi
@@ -36,16 +36,16 @@ function rt() {
 # Fast build.
 function rtbuild() {
     echo "Executing clean install (offline without tests, obfuscation, license download, and info logs) ..."
-    mvn clean install -o -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true | grep -v "^\[INFO"
+    mvn clean install -o -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true | grep -v "^\\[INFO"
 }
 
 # Reset retest installations.
 function rtreset() {
-    cd ${RETEST_ROOT_PATH}
+    cd ${RETEST_ROOT_PATH} || exit
 
     reset() {
-        rm -rf $2/*
-        unzip -o -q $1 -d $2
+        rm -rf "${2:?}"/*
+        unzip -o -q "$1" -d "$2"
     }
 
     echo "Resetting nightly ..."
@@ -63,13 +63,13 @@ function rtreset() {
 # Update retest installations.
 function rtup() {
     read -s -p "username:password? " credentials
-    cd ${RETEST_ROOT_PATH}
+    cd ${RETEST_ROOT_PATH} || exit
 
     update() {
-        rm $1
-        curl --remote-name --user ${credentials} https://retest.de/update/$1
-        rm -rf $2/*
-        unzip -o -q $1 -d $2
+        rm "$1"
+        curl --remote-name --user "${credentials}" https://retest.de/update/"$1"
+        rm -rf "${2:?}"/*
+        unzip -o -q "$1" -d "$2"
     }
 
     echo "Updating nightly ..."
