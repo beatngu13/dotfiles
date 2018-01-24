@@ -1,6 +1,4 @@
-# Home variables.
-export ANT_HOME='/opt/Ant/apache-ant-1.9.6'
-export JAVA_1_6_HOME='/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home'
+# Set retest variables.
 export RETEST_ROOT_PATH='/opt/retest'
 export RETEST_NIGHTLY_LATEST_PATH=${RETEST_ROOT_PATH}'/retest-demo-nightly-latest'
 export RETEST_NIGHTLY_LATEST_ZIP='retest-demo-nightly-latest.zip'
@@ -10,18 +8,13 @@ export RETEST_STABLE_LATEST_PATH=${RETEST_ROOT_PATH}'/retest-demo-stable-latest'
 export RETEST_STABLE_LATEST_ZIP='retest-demo-stable-latest.zip'
 export VAGRANT_SERVER_URL="http://192.168.178.51/boxes"
 
+# Set path.
+export ANT_HOME='/opt/Ant/apache-ant-1.9.6'
+export JAVA_1_6_HOME='/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home'
 export PATH=\
-${PATH}/bin:\
+${PATH}:\
 ${ANT_HOME}/bin:\
-${JAVA_1_6_HOME}/bin:\
-${RETEST_ROOT_PATH}:\
-${RETEST_NIGHTLY_LATEST_PATH}:\
-${RETEST_NIGHTLY_LATEST_ZIP}:\
-${RETEST_BETA_LATEST_PATH}:\
-${RETEST_BETA_LATEST_ZIP}:\
-${RETEST_STABLE_LATEST_PATH}:\
-${RETEST_STABLE_LATEST_ZIP}:\
-${VAGRANT_SERVER_URL}
+${JAVA_1_6_HOME}/bin
 
 # Quick start.
 function rt() {

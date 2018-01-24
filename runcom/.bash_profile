@@ -7,22 +7,21 @@ alias hideall='defaults write com.apple.finder AppleShowAllFiles NO; killall Fin
 # Port scan: stroke <address> <startPort> <endPort>.
 alias stroke='/System/Library/CoreServices/Applications/Network Utility.app/Contents/Resources/stroke'
 
-# Enable and specify terminal colors.
+# Set terminal colors.
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-# Home variables.
+# Set other variables.
 export DOTFILES_PATH='~/Dev/Workspaces/dotfiles/'
 export EDITOR='atom'
+
+# Set path.
 export M2_HOME='/opt/Maven/apache-maven-3.2.5'
 export PYTHON_HOME='/Library/Frameworks/Python.framework/Versions/3.5'
-
 export PATH=\
-${PATH}/bin:\
-${DOTFILES_PATH}:\
-${EDITOR}:\
+${PATH}:\
 ${M2_HOME}/bin:\
-${PYTHON_HOME}
+${PYTHON_HOME}/bin
 
 # Fully update/upgrade brew.
 function brewup() {
