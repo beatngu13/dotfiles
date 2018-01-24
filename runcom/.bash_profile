@@ -34,3 +34,8 @@ function brewup() {
 
 # Init jenv (execute "jenv enable-plugin export" if home variables are not set).
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
+# Source other dotfiles.
+for dotfile in ~/Dev/Workspaces/dotfiles/system/.*; do
+  [ -f "$dotfile" ] && . "$dotfile"
+done
