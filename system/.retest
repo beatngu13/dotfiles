@@ -39,24 +39,25 @@ function rtbuild() {
     mvn clean install -o -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true | grep -v "^\\[INFO"
 }
 
+# Reset retest helper.
+function _reset() {
+    rm -rf "${2:?}"/*
+    unzip -o -q "$1" -d "$2"
+    sed -i '' 's/#de.retest.feedback.disabled=false/de.retest.feedback.disabled=true/g' "$2"/retest-workspace/retest.properties
+}
+
 # Reset retest installations.
 function rtreset() {
     cd ${RETEST_ROOT_PATH} || exit
 
-    reset() {
-        rm -rf "${2:?}"/*
-        unzip -o -q "$1" -d "$2"
-        sed -i '' 's/#de.retest.feedback.disabled=false/de.retest.feedback.disabled=true/g' "$2"/retest-workspace/retest.properties
-    }
-
     echo "Resetting nightly ..."
-    reset ${RETEST_NIGHTLY_LATEST_ZIP} ${RETEST_NIGHTLY_LATEST_PATH}
+    _reset ${RETEST_NIGHTLY_LATEST_ZIP} ${RETEST_NIGHTLY_LATEST_PATH}
 
     echo "Resetting beta ..."
-    reset ${RETEST_BETA_LATEST_ZIP} ${RETEST_BETA_LATEST_PATH}
+    _reset ${RETEST_BETA_LATEST_ZIP} ${RETEST_BETA_LATEST_PATH}
 
     echo "Resetting stable ..."
-    reset ${RETEST_STABLE_LATEST_ZIP} ${RETEST_STABLE_LATEST_PATH}
+    _reset ${RETEST_STABLE_LATEST_ZIP} ${RETEST_STABLE_LATEST_PATH}
 
     cd -
 }
@@ -69,9 +70,7 @@ function rtup() {
     update() {
         rm "$1"
         curl --remote-name --user "${credentials}" https://retest.de/update/"$1"
-        rm -rf "${2:?}"/*
-        unzip -o -q "$1" -d "$2"
-        sed -i '' 's/#de.retest.feedback.disabled=false/de.retest.feedback.disabled=true/g' "$2"/retest-workspace/retest.properties
+        _reset "$1" "$2"
     }
 
     echo "Updating nightly ..."
