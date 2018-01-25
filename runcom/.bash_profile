@@ -25,11 +25,11 @@ ${PYTHON_HOME}/bin
 
 # Fully update/upgrade brew.
 function brewup() {
-    echo "Updating brew ..."
+    echo "Update brew ..."
     brew update
-    echo "Upgrading brew ..."
+    echo "Upgrade brew ..."
     brew upgrade
-    echo "Upgrading casks ..."
+    echo "Upgrade casks ..."
     brew cask upgrade
 }
 

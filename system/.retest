@@ -29,13 +29,13 @@ function rt() {
         version="${RETEST_STABLE_LATEST_PATH}"
     fi
 
-    echo "Launching retest version:" $(cat ${version}/retest/version.txt) "..."
+    echo "Launch retest version:" $(cat ${version}/retest/version.txt) "..."
     sh "${version}"/retest/retest-gui.sh
 }
 
 # Fast build.
 function rtbuild() {
-    echo "Executing clean install (offline without tests, obfuscation, license download, and info logs) ..."
+    echo "Execute clean install (offline without tests, obfuscation, license download, and info logs) ..."
     mvn clean install -o -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true | grep -v "^\\[INFO"
 }
 
