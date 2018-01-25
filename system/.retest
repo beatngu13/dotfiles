@@ -39,33 +39,37 @@ function rtbuild() {
     mvn clean install -o -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true | grep -v "^\\[INFO"
 }
 
-# Reset retest helper.
+# Reset retest installation helper.
 function _reset() {
     rm -rf "${2:?}"/*
     unzip -o -q "$1" -d "$2"
     sed -i '' 's/#de.retest.feedback.disabled=false/de.retest.feedback.disabled=true/g' "$2"/retest-workspace/retest.properties
 }
 
-# Reset retest installations.
-function rtreset() {
-    cd ${RETEST_ROOT_PATH} || exit
+# For each retest installation helper.
+function _foreach() {
+    cd "${RETEST_ROOT_PATH}" || exit
 
-    echo "Resetting nightly ..."
-    _reset ${RETEST_NIGHTLY_LATEST_ZIP} ${RETEST_NIGHTLY_LATEST_PATH}
+    echo "$1" "nightly ..."
+    $2 "${RETEST_NIGHTLY_LATEST_ZIP}" "${RETEST_NIGHTLY_LATEST_PATH}"
 
-    echo "Resetting beta ..."
-    _reset ${RETEST_BETA_LATEST_ZIP} ${RETEST_BETA_LATEST_PATH}
+    echo "$1" "beta ..."
+    $2 "${RETEST_BETA_LATEST_ZIP}" "${RETEST_BETA_LATEST_PATH}"
 
-    echo "Resetting stable ..."
-    _reset ${RETEST_STABLE_LATEST_ZIP} ${RETEST_STABLE_LATEST_PATH}
+    echo "$1" "stable ..."
+    $2 "${RETEST_STABLE_LATEST_ZIP}" "${RETEST_STABLE_LATEST_PATH}"
 
     cd -
+}
+
+# Reset retest installations.
+function rtreset() {
+    _foreach "Reset" _reset
 }
 
 # Update retest installations.
 function rtup() {
     read -s -p "username:password? " credentials
-    cd ${RETEST_ROOT_PATH} || exit
 
     update() {
         rm "$1"
@@ -73,14 +77,5 @@ function rtup() {
         _reset "$1" "$2"
     }
 
-    echo "Updating nightly ..."
-    update ${RETEST_NIGHTLY_LATEST_ZIP} ${RETEST_NIGHTLY_LATEST_PATH}
-
-    echo "Updating beta ..."
-    update ${RETEST_BETA_LATEST_ZIP} ${RETEST_BETA_LATEST_PATH}
-
-    echo "Updating stable ..."
-    update ${RETEST_STABLE_LATEST_ZIP} ${RETEST_STABLE_LATEST_PATH}
-
-    cd -
+    _foreach "Update" update
 }
