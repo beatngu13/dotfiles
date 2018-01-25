@@ -20,17 +20,17 @@ ${JAVA_1_6_HOME}/bin
 function rt() {
     if [ "$1" == "nightly" ]
     then
-        version=${RETEST_NIGHTLY_LATEST_PATH}
+        version="${RETEST_NIGHTLY_LATEST_PATH}"
     elif [ "$1" == "beta" ]
     then
-        version=${RETEST_BETA_LATEST_PATH}
+        version="${RETEST_BETA_LATEST_PATH}"
     elif [ "$1" == "stable" ]
     then
-        version=${RETEST_STABLE_LATEST_PATH}
+        version="${RETEST_STABLE_LATEST_PATH}"
     fi
 
     echo "Launching retest version:" $(cat ${version}/retest/version.txt) "..."
-    sh ${version}/retest/retest-gui.sh
+    sh "${version}"/retest/retest-gui.sh
 }
 
 # Fast build.
