@@ -59,7 +59,7 @@ function _foreach() {
     echo "$1" "stable ..."
     $2 "${RETEST_STABLE_LATEST_ZIP}" "${RETEST_STABLE_LATEST_PATH}"
 
-    cd -
+    cd - > /dev/null
 }
 
 # Reset retest installations.
