@@ -28,7 +28,7 @@ function rt() {
     fi
 
     echo "Launch retest version:" $(cat ${version}/retest/version.txt) "..."
-    sh "${version}"/retest/retest-gui.sh
+    "${version}"/retest/retest "${@:2}"
 }
 
 # Fast build.
