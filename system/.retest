@@ -25,6 +25,9 @@ function rt() {
     elif [ "$1" == "stable" ]
     then
         version="${RETEST_STABLE_LATEST_PATH}"
+    else
+        echo "Unknown version:" "$1"
+        return
     fi
 
     echo "Launch retest version:" $(cat ${version}/retest/version.txt) "..."
