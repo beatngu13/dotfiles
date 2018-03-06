@@ -20,7 +20,6 @@ brew install "${brew_apps[@]}"
 # Homebrew-Cask apps.
 cask_apps=(
     adobe-acrobat-reader
-    anki
     atom
     diffmerge
     dropbox
@@ -28,7 +27,6 @@ cask_apps=(
     firefox
     gimp
     google-drive-file-stream
-    intellij-idea-ce
     java
     java8
     java6
