@@ -23,13 +23,13 @@ ${PATH}:\
 ${M2_HOME}/bin:\
 ${PYTHON_HOME}/bin
 
-# Fully update/upgrade brew.
+# Fully update/upgrade Homebrew.
 function brewup() {
-    echo "Update brew ..."
+    echo "Update Homebrew ..."
     brew update
-    echo "Upgrade brew ..."
+    echo "Upgrade Homebrew ..."
     brew upgrade
-    echo "Upgrade casks ..."
+    echo "Upgrade Homebrew-Cask ..."
     brew cask upgrade
 }
 
