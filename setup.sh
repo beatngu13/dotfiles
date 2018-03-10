@@ -35,6 +35,7 @@ cask_apps=(
     libreoffice
     mactex
     microsoft-office
+    pyenv-virtualenv
     skype
     slack
     sourcetree
@@ -47,3 +48,7 @@ cask_apps=(
 )
 
 brew cask install "${cask_apps[@]}"
+
+# Install manually.
+#   Microsoft Remote Desktop
+#   Logitech Options
