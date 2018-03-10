@@ -4,10 +4,10 @@ My dotfiles for macOS, inspired by Lars Kappert's ["Getting Started With Dotfile
 
 ## Installation
 
-On a fresh macOS installation do:
+On a fresh macOS installation, do:
 
 ```
-sudo softwareupdate -i -a
+sudo softwareupdate --install --all
 xcode-select --install
 ```
 
