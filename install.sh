@@ -1,12 +1,54 @@
 #!/bin/bash
 
-DOTFILES_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# Install Homebrew.
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-ln -sfv "${DOTFILES_PATH}"/runcom/.bash_profile ~
-source "${DOTFILES_PATH}"/runcom/.bash_profile
+brew tap caskroom/versions
+brew tap caskroom/cask
 
-ln -sfv "${DOTFILES_PATH}"/git/.gitconfig ~
-ln -sfv "${DOTFILES_PATH}"/git/.gitconfig_retest ~
-ln -sfv "${DOTFILES_PATH}"/git/.gitignore_global ~
+# Homebrew apps.
+brew_apps=(
+    bash-completion
+    git
+    jenv
+    maven
+    pdfgrep
+)
 
-ln -sfv ~/Dropbox/kruse/dotfiles/ssh/config ~/.ssh
+brew install "${brew_apps[@]}"
+
+# Homebrew-Cask apps.
+cask_apps=(
+    adobe-acrobat-reader
+    atom
+    diffmerge
+    dropbox
+    eclipse-java
+    firefox
+    gimp
+    google-drive-file-stream
+    java
+    java8
+    java6
+    keepassxc
+    keka
+    libreoffice
+    mactex
+    microsoft-office
+    pyenv-virtualenv
+    skype
+    slack
+    sourcetree
+    spectacle
+    spotify
+    spotmenu
+    vagrant
+    virtualbox
+    whatsapp
+)
+
+brew cask install "${cask_apps[@]}"
+
+# Install manually.
+#   Microsoft Remote Desktop
+#   Logitech Options

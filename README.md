@@ -20,6 +20,6 @@ git clone https://github.com/beatngu13/dotfiles.git ~/.dotfiles
 And then invoke these two scripts:
 
 ```
-sh ~/.dotfiles/setup.sh
 sh ~/.dotfiles/install.sh
+sh ~/.dotfiles/update.sh
 ```
