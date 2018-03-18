@@ -43,5 +43,5 @@ fi
 
 # Source other dotfiles.
 for dotfile in ${DOTFILES_PATH}/system/.*; do
-    [ -f "${dotfile}" ] && . "${dotfile}"
+    [ -f "${dotfile}" ] && source "${dotfile}"
 done
