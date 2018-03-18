@@ -10,8 +10,6 @@ while true; do
     kill -0 "$$" || exit
 done &>/dev/null &
 
-# Install Homebrew and Homebrew cask including apps.
+# Execute other installation scripts (order matters).
 source install/brew.sh
-
-# Configure macOS.
 source install/macos.sh
