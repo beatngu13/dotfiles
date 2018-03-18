@@ -36,10 +36,10 @@ if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 
 # Enable Bash completion.
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
-. $(brew --prefix)/etc/bash_completion
+    source $(brew --prefix)/etc/bash_completion
 fi
 
 # Source other dotfiles.
 for dotfile in ${DOTFILES_PATH}/system/.*; do
-  [ -f "${dotfile}" ] && . "${dotfile}"
+    [ -f "${dotfile}" ] && . "${dotfile}"
 done
