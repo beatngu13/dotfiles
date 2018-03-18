@@ -23,3 +23,5 @@ And then invoke these two scripts (make sure to set up Dropbox before `update.sh
 source ~/.dotfiles/install.sh
 source ~/.dotfiles/update.sh
 ```
+
+As the file names suggest, `install.sh` is only used for the first time, whereas `update.sh` should be used every time the dotfiles are updated.
