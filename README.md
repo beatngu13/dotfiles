@@ -20,6 +20,6 @@ git clone https://github.com/beatngu13/dotfiles.git ~/.dotfiles
 And then invoke these two scripts (make sure to set up Dropbox before `update.sh` since the SSH configuration is stored in there):
 
 ```
-sh ~/.dotfiles/install.sh
-sh ~/.dotfiles/update.sh
+source ~/.dotfiles/install.sh
+source ~/.dotfiles/update.sh
 ```
