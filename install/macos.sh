@@ -1,3 +1,7 @@
+################################################################################
+# Setup                                                                        #
+################################################################################
+
 COMPUTER_NAME="beatngu13-hq"
 
 osascript -e 'tell application "System Preferences" to quit'
@@ -133,7 +137,7 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 
 ################################################################################
-# Kill Affected Apps                                                           #
+# Teardown                                                                     #
 ################################################################################
 
 for app in "Address Book" "Calendar" "Contacts" "Dock" "Finder" "Mail" "Safari" "SystemUIServer" "iCal"; do
