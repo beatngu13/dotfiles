@@ -86,6 +86,14 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Automatically hide and show.
 defaults write com.apple.dock autohide -bool true
 
+# Add favorite apps.
+dockutil --no-restart --add "/Applications/Atom.app"
+dockutil --no-restart --add "/Applications/Eclipse.app"
+dockutil --no-restart --add "/Applications/SourceTree.app"
+dockutil --no-restart --add "/Applications/Slack.app"
+dockutil --no-restart --add "/Applications/WhatsApp.app"
+dockutil --no-restart --add "/Applications/Spotify.app"
+
 
 ################################################################################
 # Mail                                                                         #

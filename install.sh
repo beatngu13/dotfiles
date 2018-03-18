@@ -65,4 +65,3 @@ brew cask install "${cask_apps[@]}"
 
 # Configure macOS.
 source macos/defaults.sh
-source macos/dock.sh
