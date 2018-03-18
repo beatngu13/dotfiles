@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Ask for sudo password upfront.
+sudo -v
+
+# Update existing sudo time stamp until installation has finished.
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 # Install Homebrew.
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -52,3 +58,7 @@ brew cask install "${cask_apps[@]}"
 # Install manually.
 #   Microsoft Remote Desktop
 #   Logitech Options
+
+# Configure macOS.
+source macos/defaults.sh
+source macos/dock.sh
