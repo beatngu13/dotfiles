@@ -32,7 +32,9 @@ function brewup() {
 }
 
 # Init jenv (execute "jenv enable-plugin export" if home variables are not set).
-if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+if which jenv >/dev/null; then
+    eval "$(jenv init -)"
+fi
 
 # Enable Bash completion.
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
