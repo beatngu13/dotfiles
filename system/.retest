@@ -16,19 +16,20 @@ ${JAVA_1_6_HOME}/bin
 
 # Quick start.
 function rt() {
-    if [ "$1" == "nightly" ]
-    then
-        version="${RETEST_NIGHTLY_LATEST_PATH}"
-    elif [ "$1" == "beta" ]
-    then
-        version="${RETEST_BETA_LATEST_PATH}"
-    elif [ "$1" == "stable" ]
-    then
-        version="${RETEST_STABLE_LATEST_PATH}"
-    else
-        echo "Unknown version:" "$1"
-        return
-    fi
+    case "$1" in
+        "nightly")
+            version="${RETEST_NIGHTLY_LATEST_PATH}"
+            ;;
+        "beta")
+            version="${RETEST_BETA_LATEST_PATH}"
+            ;;
+        "stable")
+            version="${RETEST_STABLE_LATEST_PATH}"
+            ;;
+        *)
+            echo "Unknown version:" "$1"
+            return
+    esac
 
     echo "Launch retest version:" $(cat ${version}/retest/version.txt) "..."
     "${version}"/retest/retest "${@:2}"
