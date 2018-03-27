@@ -41,6 +41,10 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     source $(brew --prefix)/etc/bash_completion
 fi
 
+# Enable auto-activation of virtualenvs.
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 # Source other dotfiles.
 for dotfile in ${DOTFILES_PATH}/system/.*; do
     [ -f "${dotfile}" ] && source "${dotfile}"
