@@ -9,4 +9,6 @@ ln -sfv "${DOTFILES_PATH}"/git/.gitconfig ~
 ln -sfv "${DOTFILES_PATH}"/git/.gitconfig_retest ~
 ln -sfv "${DOTFILES_PATH}"/git/.gitignore_global ~
 
+ln -sfv "${DOTFILES_PATH}"/etc/vagrant/Vagrantfile ~/.vagrant.d
+
 ln -sfv ~/Dropbox/kruse/dotfiles/ssh/config ~/.ssh
