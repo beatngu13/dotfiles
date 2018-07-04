@@ -14,10 +14,12 @@ export DOTFILES_PATH=${HOME}/Dev/Workspaces/dotfiles/
 export EDITOR=atom
 
 # Set path.
+export FIREFOX_HOME='/Applications/Firefox.app/Contents/MacOS'
 export M2_HOME='/opt/Maven/apache-maven-3.2.5'
 export PYTHON_HOME='/Library/Frameworks/Python.framework/Versions/3.5'
 export PATH=\
 ${PATH}:\
+${FIREFOX_HOME}:\
 ${M2_HOME}/bin:\
 ${PYTHON_HOME}/bin
 
