@@ -33,6 +33,13 @@ function brewup() {
     brew cask upgrade
 }
 
+# Remove directory content without deleting the directory itself.
+function rmc() {
+    dir="$1"
+    rm -r "${dir}"
+    mkdir "${dir}"
+}
+
 # Init jenv (execute "jenv enable-plugin export" if home variables are not set).
 if which jenv >/dev/null; then
     eval "$(jenv init -)"
