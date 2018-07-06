@@ -12,6 +12,7 @@ brew_apps=(
     git
     jenv
     maven
+    neofetch
     pdfgrep
 )
 
