@@ -22,11 +22,13 @@ brew install "${brew_apps[@]}"
 cask_apps=(
     adobe-acrobat-reader
     atom
+    chromedriver
     diffmerge
     dropbox
     eclipse-java
     firefox
     gimp
+    google-chrome
     google-drive-file-stream
     java
     java8
