@@ -33,6 +33,7 @@ cask_apps=(
     java
     java8
     java6
+    jd-gui
     keepassxc
     keka
     libreoffice
