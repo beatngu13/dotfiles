@@ -31,6 +31,7 @@ cask_apps=(
     gimp
     google-chrome
     google-drive-file-stream
+    gpg-suite
     java
     java8
     java6
