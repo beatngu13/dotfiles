@@ -11,6 +11,7 @@ brew_apps=(
     bash-completion
     git
     jenv
+    mas
     maven
     neofetch
     pdfgrep
