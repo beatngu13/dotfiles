@@ -10,12 +10,16 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Set other variables.
+# TODO Set to ${HOME}/dotfiles/.
 export DOTFILES_PATH=${HOME}/Dev/Workspaces/dotfiles/
 export EDITOR=atom
 
 # Set path.
+# TODO Obsolete when installed via Homebrew.
 export FIREFOX_HOME='/Applications/Firefox.app/Contents/MacOS'
+# TODO Obsolete when installed via Homebrew.
 export M2_HOME='/opt/Maven/apache-maven-3.2.5'
+# TODO Obsolete when installed via Homebrew.
 export PYTHON_HOME='/Library/Frameworks/Python.framework/Versions/3.5'
 export PATH=\
 ${PATH}:\

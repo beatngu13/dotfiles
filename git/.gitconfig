@@ -11,5 +11,6 @@
 	trustExitCode = true
 [commit]
 	template = ~/.stCommitMsg
+# TODO Set to ${HOME}/dev/retest/.
 [includeIf "gitdir:~/Dev/Workspaces/eclipse-retest/"]
 	path = ~/.gitconfig_retest

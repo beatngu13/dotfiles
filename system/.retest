@@ -1,4 +1,5 @@
 # Set retest variables.
+# TODO Follow POSIX for files/directories globally.
 export RETEST_ROOT_PATH='/opt/retest'
 export RETEST_NIGHTLY_LATEST_PATH=${RETEST_ROOT_PATH}'/retest-demo-nightly-latest'
 export RETEST_NIGHTLY_LATEST_ZIP='retest-demo-nightly-latest.zip'
