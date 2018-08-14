@@ -17,6 +17,7 @@ brew_apps=(
     mas
     maven
     neofetch
+    pandoc
     pdfgrep
 )
 
