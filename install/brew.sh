@@ -5,9 +5,12 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew tap caskroom/versions
 brew tap caskroom/cask
+brew tap AdoptOpenJDK/openjdk
 
 # Homebrew apps.
 brew_apps=(
+    adoptopenjdk-openjdk8
+    adoptopenjdk-openjdk10
     bash-completion
     git
     jenv
@@ -32,9 +35,6 @@ cask_apps=(
     google-chrome
     google-drive-file-stream
     gpg-suite
-    java
-    java8
-    java6
     jd-gui
     keepassxc
     keka
