@@ -27,14 +27,22 @@ ${FIREFOX_HOME}:\
 ${M2_HOME}/bin:\
 ${PYTHON_HOME}/bin
 
-# Fully update/upgrade Homebrew.
-function brewup() {
-    echo "Update Homebrew ..."
+# Update Homebrew, Homebrew-Cask and Mac App Store.
+function up() {
+    echo "Update and upgrade Homebrew ..."
     brew update
-    echo "Upgrade Homebrew ..."
     brew upgrade
+    echo "Clean up and prune Homebrew ..."
+    brew cleanup
+    brew prune
+
     echo "Upgrade Homebrew-Cask ..."
     brew cask upgrade
+    echo "Clean up Homebrew-Cask ..."
+    brew cask cleanup
+
+    echo "Upgrade Mac App Store ..."
+    mas upgrade
 }
 
 # Remove directory content without deleting the directory itself.
