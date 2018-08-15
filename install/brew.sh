@@ -56,6 +56,9 @@ cask_apps=(
 
 brew cask install "${cask_apps[@]}"
 
+# Mac App Store apps.
+# Microsoft Remote Desktop 10.
+mas install 1295203466
+
 # Install manually.
-#   Microsoft Remote Desktop
-#   Logitech Options
+# Logitech Options.
