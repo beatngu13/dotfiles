@@ -32,14 +32,13 @@ function up() {
     echo "Update and upgrade Homebrew ..."
     brew update
     brew upgrade
-    echo "Clean up and prune Homebrew ..."
-    brew cleanup
-    brew prune
 
     echo "Upgrade Homebrew-Cask ..."
     brew cask upgrade
-    echo "Clean up Homebrew-Cask ..."
-    brew cask cleanup
+
+    echo "Clean up and prune Homebrew and Homebrew-Cask ..."
+    brew cleanup
+    brew prune
 
     echo "Upgrade Mac App Store ..."
     mas upgrade
