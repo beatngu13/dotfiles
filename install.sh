@@ -11,5 +11,5 @@ while true; do
 done &>/dev/null &
 
 # Execute other installation scripts (order matters).
-source install/brew.sh
+source install/apps.sh
 source install/macos.sh
