@@ -19,6 +19,7 @@ brew_apps=(
     neofetch
     pandoc
     pdfgrep
+    scala
 )
 
 brew install "${brew_apps[@]}"
@@ -43,6 +44,7 @@ cask_apps=(
     mactex
     microsoft-office
     pyenv-virtualenv
+    scala-ide
     skype
     slack
     sourcetree
