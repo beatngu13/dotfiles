@@ -27,7 +27,6 @@ brew install "${brew_apps[@]}"
 # Homebrew-Cask apps.
 cask_apps=(
     adobe-acrobat-reader
-    atom
     chromedriver
     diffmerge
     dropbox
@@ -53,6 +52,7 @@ cask_apps=(
     spotmenu
     vagrant
     virtualbox
+    visual-studio-code
     whatsapp
 )
 
