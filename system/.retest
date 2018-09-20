@@ -39,7 +39,8 @@ function rt() {
 # Fast build.
 function rtbuild() {
     echo "Execute clean install (offline without tests, obfuscation, license download, and info logs) ..."
-    mvn clean install --offline -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true "$@"
+    # TODO -Dproguard.skip=true currently fails the local build.
+    mvn clean install --offline -DskipTests -Dlicense.skipDownloadLicenses=true "$@"
 }
 
 # Reset retest installation helper.
