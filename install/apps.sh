@@ -10,7 +10,6 @@ brew tap AdoptOpenJDK/openjdk
 # Homebrew apps.
 brew_apps=(
     adoptopenjdk-openjdk8
-    adoptopenjdk-openjdk10
     bash-completion
     git
     jenv
@@ -26,6 +25,7 @@ brew install "${brew_apps[@]}"
 
 # Homebrew-Cask apps.
 cask_apps=(
+    adoptopenjdk
     adobe-acrobat-reader
     chromedriver
     diffmerge
