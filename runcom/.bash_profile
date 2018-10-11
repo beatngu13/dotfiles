@@ -13,6 +13,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # TODO Set to ${HOME}/dotfiles/.
 export DOTFILES_PATH=${HOME}/Dev/Workspaces/dotfiles/
 export EDITOR=atom
+export LANG=en_US.UTF-8
 
 # Set path.
 # TODO Obsolete when installed via Homebrew.
