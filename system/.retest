@@ -38,7 +38,7 @@ function rt() {
 
 # Fast build.
 function rtbuild() {
-    echo "Execute clean install (offline without tests, obfuscation, license download, and info logs) ..."
+    echo "Execute clean install (offline, without tests, obfuscation, and license download) ..."
     mvn clean install --offline -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true "$@"
 }
 
