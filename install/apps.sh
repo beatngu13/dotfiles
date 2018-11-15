@@ -9,9 +9,11 @@ brew tap AdoptOpenJDK/openjdk
 
 # Homebrew apps.
 brew_apps=(
-    adoptopenjdk-openjdk8
     bash-completion
+    clojure
+    geckodriver
     git
+    gradle
     jenv
     mas
     maven
@@ -26,6 +28,7 @@ brew install "${brew_apps[@]}"
 # Homebrew-Cask apps.
 cask_apps=(
     adoptopenjdk
+    adoptopenjdk8
     adobe-acrobat-reader
     chromedriver
     diffmerge
@@ -36,6 +39,7 @@ cask_apps=(
     google-chrome
     google-drive-file-stream
     gpg-suite
+    intellij-idea
     jd-gui
     keepassxc
     keka
@@ -43,7 +47,6 @@ cask_apps=(
     mactex
     microsoft-office
     pyenv-virtualenv
-    scala-ide
     skype
     slack
     sourcetree
