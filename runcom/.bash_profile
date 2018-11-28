@@ -1,5 +1,5 @@
 # Edit .bash_profile from dotfiles repo.
-alias bashedit='${EDITOR} ${HOME}/Dev/Workspaces/dotfiles/runcom/.bash_profile'
+alias bashedit='${EDITOR} ${DOTFILES_PATH}/runcom/.bash_profile'
 # Show hidden files.
 alias showall='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
 # Hide hidden files.
@@ -10,23 +10,8 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Set other variables.
-# TODO Set to ${HOME}/dotfiles/.
-export DOTFILES_PATH=${HOME}/Dev/Workspaces/dotfiles/
-export EDITOR=atom
+export DOTFILES_PATH=${HOME}/.dotfiles/
 export LANG=en_US.UTF-8
-
-# Set path.
-# TODO Obsolete when installed via Homebrew.
-export FIREFOX_HOME='/Applications/Firefox.app/Contents/MacOS'
-# TODO Obsolete when installed via Homebrew.
-export M2_HOME='/opt/Maven/apache-maven-3.2.5'
-# TODO Obsolete when installed via Homebrew.
-export PYTHON_HOME='/Library/Frameworks/Python.framework/Versions/3.5'
-export PATH=\
-${PATH}:\
-${FIREFOX_HOME}:\
-${M2_HOME}/bin:\
-${PYTHON_HOME}/bin
 
 # Update Homebrew, Homebrew-Cask and Mac App Store.
 function up() {

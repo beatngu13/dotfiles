@@ -5,6 +5,5 @@
 	excludesfile = ~/.gitignore_global
 [commit]
 	template = ~/.stCommitMsg
-# TODO Set to ${HOME}/dev/retest/.
-[includeIf "gitdir:~/Dev/Workspaces/eclipse-retest/"]
+[includeIf "gitdir:~/dev/retest/eclipse/"]
 	path = ~/.gitconfig_retest
