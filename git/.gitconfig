@@ -5,5 +5,7 @@
 	excludesfile = ~/.gitignore_global
 [commit]
 	template = ~/.stCommitMsg
+[credential]
+	helper = osxkeychain
 [includeIf "gitdir:~/dev/retest/eclipse/"]
 	path = ~/.gitconfig_retest
