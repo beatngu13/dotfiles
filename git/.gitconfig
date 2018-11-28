@@ -7,5 +7,5 @@
 	template = ~/.stCommitMsg
 [credential]
 	helper = osxkeychain
-[includeIf "gitdir:~/dev/retest/eclipse/"]
+[includeIf "gitdir:~/dev/workspaces/retest/eclipse/"]
 	path = ~/.gitconfig_retest
