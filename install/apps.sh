@@ -7,6 +7,10 @@ brew tap caskroom/versions
 brew tap caskroom/cask
 brew tap AdoptOpenJDK/openjdk
 
+# TODO Sort apps logically (e.g. Clojure requires Java).
+# TODO Continue installations when a single app fails.
+# TODO Add build tools for other languages (Leiningen, sbt, etc.)
+
 # Homebrew apps.
 brew_apps=(
     bash-completion
@@ -62,6 +66,7 @@ cask_apps=(
 brew cask install "${cask_apps[@]}"
 
 # Mac App Store apps.
+# TODO Causes account issues.
 # Microsoft Remote Desktop 10.
 mas install 1295203466
 

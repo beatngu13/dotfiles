@@ -11,5 +11,7 @@ while true; do
 done &>/dev/null &
 
 # Execute other installation scripts (order matters).
+# TODO Set up directories.
+# TODO Check out Git repos.
 source install/apps.sh
 source install/macos.sh
