@@ -44,7 +44,7 @@ cask_apps=(
     google-chrome
     google-drive-file-stream
     gpg-suite
-    intellij-idea
+    intellij-idea-ce
     jd-gui
     keepassxc
     keka
