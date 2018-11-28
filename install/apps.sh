@@ -27,9 +27,9 @@ brew install "${brew_apps[@]}"
 
 # Homebrew-Cask apps.
 cask_apps=(
+    adobe-acrobat-reader
     adoptopenjdk
     adoptopenjdk8
-    adobe-acrobat-reader
     chromedriver
     diffmerge
     dropbox
