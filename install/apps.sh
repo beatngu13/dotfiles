@@ -38,7 +38,7 @@ cask_apps=(
     chromedriver
     diffmerge
     dropbox
-    eclipse-java
+    eclipse-installer
     firefox
     gimp
     google-chrome
