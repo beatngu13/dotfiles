@@ -17,7 +17,7 @@ Afterwards, clone this repo:
 git clone https://github.com/beatngu13/dotfiles.git ~/.dotfiles
 ```
 
-And then invoke these two scripts (make sure to set up Dropbox before `update.sh` since the SSH configuration is stored in there):
+And then invoke these two scripts (make sure to set up Dropbox *before* executing `update.sh` since the SSH configuration is stored in there):
 
 ```
 source ~/.dotfiles/install.sh
