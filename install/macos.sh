@@ -96,6 +96,9 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Automatically hide and show.
 defaults write com.apple.dock autohide -bool true
 
+# Hide recently used applications.
+defaults write com.Apple.Dock show-recents -bool false
+
 # Add favorite apps.
 dockutil --no-restart --add "/Applications/Atom.app"
 dockutil --no-restart --add "/Applications/Eclipse.app"
