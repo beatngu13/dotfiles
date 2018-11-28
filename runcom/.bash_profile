@@ -11,6 +11,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Set other variables.
 export DOTFILES_PATH=${HOME}/.dotfiles/
+export EDITOR=code
 export LANG=en_US.UTF-8
 
 # Update Homebrew, Homebrew-Cask and Mac App Store.
