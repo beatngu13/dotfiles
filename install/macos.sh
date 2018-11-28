@@ -6,6 +6,9 @@ COMPUTER_NAME="beatngu13-hq"
 
 osascript -e 'tell application "System Preferences" to quit'
 
+# Ask for the administrator password upfront.
+sudo -v
+
 
 ################################################################################
 # General Settings                                                             #
@@ -45,6 +48,9 @@ defaults write com.apple.BezelServices kDim -bool true
 
 # Turn off keyboard illumination when computer is not used for 5 min.
 defaults write com.apple.BezelServices kDimTime -int 300
+
+# Disable auto-correct.
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 
 ################################################################################
@@ -112,6 +118,9 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 # Disable inline attachments (just show the icons).
 defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
 
+# Show most recent message at the top in conversations.
+defaults write com.apple.mail ConversationViewSortDescending -bool true
+
 
 ################################################################################
 # Terminal                                                                     #
@@ -133,7 +142,7 @@ defaults write com.apple.terminal "Startup Window Settings" -string "Pro"
 defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
 
 # Check for software updates daily (not just once per week).
-defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -bool true
 
 
 ################################################################################
