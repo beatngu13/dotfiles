@@ -72,7 +72,7 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Show all filename extensions.
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
-# Use current folder by default when performing search.
+# Use current directory by default when performing search.
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 # Disable warning when changing a file extension.
