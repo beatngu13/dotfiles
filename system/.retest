@@ -9,12 +9,6 @@ export RETEST_STABLE_LATEST_PATH=${RETEST_ROOT_PATH}'/retest-demo-stable-latest'
 export RETEST_STABLE_LATEST_ZIP='retest-demo-stable-latest.zip'
 export VAGRANT_SERVER_URL="http://192.168.178.51/boxes"
 
-# Set path.
-export JAVA_1_6_HOME='/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home'
-export PATH=\
-${PATH}:\
-${JAVA_1_6_HOME}/bin
-
 # Quick start.
 function rt() {
     case "$1" in
