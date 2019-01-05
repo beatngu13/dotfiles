@@ -48,7 +48,7 @@ cask_apps=(
     jd-gui
     keepassxc
     keka
-    libreoffice
+    libreoffice-still
     mactex
     microsoft-office
     skype
