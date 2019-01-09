@@ -9,9 +9,13 @@ alias hideall='defaults write com.apple.finder AppleShowAllFiles NO; killall Fin
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-# Set other variables.
+# Set dotfiles path.
 export DOTFILES_PATH=${HOME}/.dotfiles/
+
+# Set default editor.
 export EDITOR=code
+
+# Set default language.
 export LANG=en_US.UTF-8
 
 # Update Homebrew, Homebrew-Cask and Mac App Store.
