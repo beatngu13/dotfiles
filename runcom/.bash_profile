@@ -15,6 +15,9 @@ export DOTFILES_PATH=${HOME}/.dotfiles/
 # Set default editor.
 export EDITOR=code
 
+# Clean up Homebrew/Homebrew-Cask periodically.
+export HOMEBREW_INSTALL_CLEANUP=1
+
 # Set default language.
 export LANG=en_US.UTF-8
 
@@ -26,10 +29,6 @@ function up() {
 
     echo "Upgrade Homebrew-Cask ..."
     brew cask upgrade
-
-    echo "Clean up and prune Homebrew and Homebrew-Cask ..."
-    brew cleanup
-    brew prune
 
     echo "Upgrade Mac App Store ..."
     mas upgrade
