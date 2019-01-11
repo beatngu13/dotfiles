@@ -66,7 +66,6 @@ cask_apps=(
 brew cask install "${cask_apps[@]}"
 
 # Mac App Store apps.
-# TODO Causes account issues.
 # Microsoft Remote Desktop 10.
 mas install 1295203466
 # Keynote.
