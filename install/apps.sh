@@ -69,6 +69,8 @@ brew cask install "${cask_apps[@]}"
 # TODO Causes account issues.
 # Microsoft Remote Desktop 10.
 mas install 1295203466
+# Keynote.
+mas install 409183694
 
 # Install manually.
 # Logitech Options.
