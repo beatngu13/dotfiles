@@ -18,6 +18,7 @@ brew_apps=(
     geckodriver
     git
     gradle
+    graphviz
     jenv
     mas
     maven
