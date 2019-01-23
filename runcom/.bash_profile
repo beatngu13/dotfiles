@@ -23,6 +23,8 @@ export LANG=en_US.UTF-8
 
 # Update Homebrew, Homebrew-Cask and Mac App Store.
 function up() {
+    sudo -v
+
     echo "Update and upgrade Homebrew ..."
     brew update
     brew upgrade
