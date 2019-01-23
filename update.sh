@@ -12,3 +12,4 @@ ln -sfv "${DOTFILES_PATH}"/git/.gitignore_global ~
 ln -sfv "${DOTFILES_PATH}"/etc/vagrant/Vagrantfile ~/.vagrant.d
 
 ln -sfv ~/Dropbox/kruse/dotfiles/ssh/config ~/.ssh/config
+ln -sfv ~/Dropbox/kruse/dotfiles/mvn/settings.xml ~/.m2/settings.xml
