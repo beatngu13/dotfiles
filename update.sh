@@ -1,6 +1,7 @@
 #!/bin/bash
 
 DOTFILES_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DROPBOX_PATH="${HOME}"/Dropbox/kruse
 
 ln -sfv "${DOTFILES_PATH}"/runcom/.bash_profile ~
 source "${DOTFILES_PATH}"/runcom/.bash_profile
@@ -11,5 +12,5 @@ ln -sfv "${DOTFILES_PATH}"/git/.gitignore_global ~
 
 ln -sfv "${DOTFILES_PATH}"/etc/vagrant/Vagrantfile ~/.vagrant.d
 
-ln -sfv ~/Dropbox/kruse/dotfiles/ssh/config ~/.ssh/config
-ln -sfv ~/Dropbox/kruse/dotfiles/mvn/settings.xml ~/.m2/settings.xml
+ln -sfv "${DROPBOX_PATH}"/dotfiles/ssh/config ~/.ssh/config
+ln -sfv "${DROPBOX_PATH}"/dotfiles/mvn/settings.xml ~/.m2/settings.xml
