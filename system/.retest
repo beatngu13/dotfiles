@@ -1,77 +1,8 @@
-# Set retest variables.
-export RETEST_ROOT_PATH='/opt/retest/'
-export RETEST_NIGHTLY_LATEST_PATH=${RETEST_ROOT_PATH}'/retest-demo-nightly-latest'
-export RETEST_NIGHTLY_LATEST_ZIP='retest-demo-nightly-latest.zip'
-export RETEST_BETA_LATEST_PATH=${RETEST_ROOT_PATH}'/retest-demo-beta-latest'
-export RETEST_BETA_LATEST_ZIP='retest-demo-beta-latest.zip'
-export RETEST_STABLE_LATEST_PATH=${RETEST_ROOT_PATH}'/retest-demo-stable-latest'
-export RETEST_STABLE_LATEST_ZIP='retest-demo-stable-latest.zip'
+# Set Vagrant server URL.
 export VAGRANT_SERVER_URL="http://192.168.178.51/boxes"
 
-# Quick start.
-function rt() {
-    case "$1" in
-        "nightly")
-            version="${RETEST_NIGHTLY_LATEST_PATH}"
-            ;;
-        "beta")
-            version="${RETEST_BETA_LATEST_PATH}"
-            ;;
-        "stable")
-            version="${RETEST_STABLE_LATEST_PATH}"
-            ;;
-        *)
-            echo "Unknown version:" "$1"
-            return
-    esac
-
-    echo "Launch retest version:" $(cat ${version}/retest/version.txt) "..."
-    "${version}"/retest/retest "${@:2}"
-}
-
-# Fast build.
+# Execute fast Maven build.
 function rtbuild() {
     echo "Execute clean install (offline, without tests, obfuscation, and license download) ..."
     mvn clean install --offline -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true "$@"
-}
-
-# Reset retest installation helper.
-function _reset() {
-    rm -rf "${2:?}"/*
-    unzip -o -q "$1" -d "$2"
-    sed -i '' 's/#de.retest.feedback.disabled=false/de.retest.feedback.disabled=true/g' "$2"/retest-workspace/retest.properties
-}
-
-# For each retest installation helper.
-function _foreach() {
-    cd "${RETEST_ROOT_PATH}" || exit
-
-    echo "$1" "nightly ..."
-    $2 "${RETEST_NIGHTLY_LATEST_ZIP}" "${RETEST_NIGHTLY_LATEST_PATH}"
-
-    echo "$1" "beta ..."
-    $2 "${RETEST_BETA_LATEST_ZIP}" "${RETEST_BETA_LATEST_PATH}"
-
-    echo "$1" "stable ..."
-    $2 "${RETEST_STABLE_LATEST_ZIP}" "${RETEST_STABLE_LATEST_PATH}"
-
-    cd - >/dev/null
-}
-
-# Reset retest installations.
-function rtreset() {
-    _foreach "Reset" _reset
-}
-
-# Update retest installations.
-function rtup() {
-    read -s -p "username:password? " credentials
-
-    update() {
-        rm "$1"
-        curl --remote-name --user "${credentials}" https://retest.de/update/"$1"
-        _reset "$1" "$2"
-    }
-
-    _foreach "Update" update
 }
