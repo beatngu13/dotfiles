@@ -10,8 +10,19 @@ while true; do
     kill -0 "$$" || exit
 done &>/dev/null &
 
-# Execute other installation scripts (order matters).
+# Execute installation scripts (order matters).
 # TODO Set up directories.
+# TODO Set up Dropbox before .bash_profile.
 # TODO Check out Git repos.
+
+# Install apps via Homebrew, Homebrew-Cask and Mac App Store
 source install/apps.sh
+
+# Configure macOS.
 source install/macos.sh
+
+# Source .bash_profile.
+source runcom/.bash_profile
+
+# Set up symlinks.
+source install/symlinks.sh

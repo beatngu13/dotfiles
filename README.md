@@ -17,11 +17,8 @@ Afterwards, clone this repo:
 git clone https://github.com/beatngu13/dotfiles.git ~/.dotfiles
 ```
 
-And then invoke these two scripts (make sure to set up Dropbox *before* executing `update.sh` since the SSH configuration is stored in there):
+And then invoke the installation script:
 
 ```
 source ~/.dotfiles/install.sh
-source ~/.dotfiles/update.sh
 ```
-
-As the file names suggest, `install.sh` is only used for the first time, whereas `update.sh` should be used every time the dotfiles are updated.
