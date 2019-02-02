@@ -10,7 +10,7 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Set dotfiles path.
-export DOTFILES_PATH=${HOME}/.dotfiles/
+export DOTFILES_PATH="${HOME}"/.dotfiles/
 
 # Set default editor.
 export EDITOR=code
