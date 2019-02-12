@@ -13,7 +13,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export DOTFILES_PATH="${HOME}"/.dotfiles/
 
 # Set Dropbox path.
-export DROPBOX_PATH="${HOME}"/Dropbox/kruse/dotfiles/
+export DROPBOX_PATH="${HOME}"/Dropbox/Kruse/dotfiles/
 
 # Set default editor.
 export EDITOR=code
