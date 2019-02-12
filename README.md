@@ -14,11 +14,12 @@ xcode-select --install
 Afterwards, clone this repo:
 
 ```
-git clone https://github.com/beatngu13/dotfiles.git ~/.dotfiles
+git clone https://github.com/beatngu13/dotfiles.git ~/.dotfiles/
 ```
 
-And then invoke the installation script:
+And then go to `~/.dotfiles/` to invoke the installation script:
 
 ```
-source ~/.dotfiles/install.sh
+cd ~/.dotfiles/
+source install.sh
 ```
