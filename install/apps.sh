@@ -42,6 +42,7 @@ brew cask install google-chrome
 brew cask install google-drive-file-stream
 brew cask install gpg-suite
 brew cask install intellij-idea-ce
+brew cask install java8
 brew cask install jd-gui
 brew cask install keepassxc
 brew cask install keka
