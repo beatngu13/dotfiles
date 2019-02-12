@@ -13,19 +13,15 @@ brew tap AdoptOpenJDK/openjdk
 # Homebrew apps.
 
 brew install bash-completion
-brew install clojure
 brew install geckodriver
 brew install git
-brew install gradle
 brew install graphviz
 brew install jenv
 brew install mas
-brew install maven
 brew install neofetch
 brew install pandoc
 brew install pdfgrep
 brew install pyenv-virtualenv
-brew install scala
 
 # Homebrew-Cask apps.
 
@@ -64,6 +60,8 @@ brew cask install whatsapp
 
 # Require Java.
 brew install clojure
+brew install gradle
+brew install maven
 brew install scala
 
 # Mac App Store apps.
