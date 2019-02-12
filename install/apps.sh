@@ -7,7 +7,7 @@ brew tap caskroom/versions
 brew tap caskroom/cask
 brew tap AdoptOpenJDK/openjdk
 
-# TODO Use brew install "${brew_apps[@]}" without abort.
+# TODO Use brew install "${brew_apps[@]}" without abort or Brewfile (see https://github.com/holman/dotfiles/).
 # TODO Add build tools for other languages (Leiningen, sbt, etc.).
 
 # Homebrew apps.
