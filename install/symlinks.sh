@@ -9,6 +9,6 @@ ln -sfv "${DOTFILES_PATH}"/git/.gitignore_global ~
 ln -sfv "${DOTFILES_PATH}"/etc/vagrant/Vagrantfile ~/.vagrant.d
 
 mkdir ~/.ssh/
-ln -sfv "${DROPBOX_PATH}"/ssh/config ~/.ssh/config
+ln -sfv "${DROPBOX_DOTFILES_PATH}"/ssh/config ~/.ssh/config
 mkdir ~/.m2/
-ln -sfv "${DROPBOX_PATH}"/mvn/settings.xml ~/.m2/settings.xml
+ln -sfv "${DROPBOX_DOTFILES_PATH}"/mvn/settings.xml ~/.m2/settings.xml

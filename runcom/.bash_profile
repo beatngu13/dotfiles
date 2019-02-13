@@ -7,7 +7,7 @@ alias hideall='defaults write com.apple.finder AppleShowAllFiles NO; killall Fin
 
 # Set up various paths.
 export DOTFILES_PATH="${HOME}"/.dotfiles/
-export DROPBOX_PATH="${HOME}"/Dropbox/Kruse/dotfiles/
+export DROPBOX_DOTFILES_PATH="${HOME}"/Dropbox/Kruse/dotfiles/
 export WORKSPACES_PATH="${HOME}"/dev/workspaces/
 export PRIVATE_WORKSPACE_PATH="${WORKSPACES_PATH}"/private/
 
