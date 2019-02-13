@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # TODO Set up firewall.
 # TODO Set up power settings.
 
