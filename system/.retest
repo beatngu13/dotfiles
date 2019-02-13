@@ -1,3 +1,6 @@
+# Set ReTest workspace path.
+export RETEST_WORKSPACE_PATH="${WORKSPACES_PATH}"/retest/
+
 # Set Vagrant server URL.
 export VAGRANT_SERVER_URL="http://192.168.178.51/boxes"
 

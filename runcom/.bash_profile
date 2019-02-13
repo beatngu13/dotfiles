@@ -5,15 +5,15 @@ alias showall='defaults write com.apple.finder AppleShowAllFiles YES; killall Fi
 # Hide hidden files.
 alias hideall='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
 
+# Set up various paths.
+export DOTFILES_PATH="${HOME}"/.dotfiles/
+export DROPBOX_PATH="${HOME}"/Dropbox/Kruse/dotfiles/
+export WORKSPACES_PATH="${HOME}"/dev/workspaces/
+export PRIVATE_WORKSPACE_PATH="${WORKSPACES_PATH}"/private/
+
 # Set terminal colors.
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-
-# Set dotfiles path.
-export DOTFILES_PATH="${HOME}"/.dotfiles/
-
-# Set Dropbox path.
-export DROPBOX_PATH="${HOME}"/Dropbox/Kruse/dotfiles/
 
 # Set default editor.
 export EDITOR=code
