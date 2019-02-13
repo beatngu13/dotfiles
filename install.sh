@@ -11,9 +11,7 @@ while true; do
 done &>/dev/null &
 
 # Execute installation scripts (order matters).
-# TODO Set up directories.
-# TODO Check out Git repos.
-# TODO Set up SSH.
+# TODO Set up SSH automatically.
 # TODO Install should work from anywhere (absolute paths).
 
 # Install apps via Homebrew, Homebrew-Cask and Mac App Store
@@ -30,3 +28,9 @@ source runcom/.bash_profile
 
 # Set up symlinks.
 source install/symlinks.sh
+
+# Wait for SSH setup (e.g. because of repos).
+read -p "Please set up SSH and then press 'Enter' to continue."
+
+# Set up repositories.
+source install/repos.sh
