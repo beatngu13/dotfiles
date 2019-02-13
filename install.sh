@@ -11,9 +11,10 @@ while true; do
 done &>/dev/null &
 
 # Execute installation scripts (order matters).
-# TODO Install should work from anywhere (absolute paths).
 # TODO Set up directories.
 # TODO Check out Git repos.
+# TODO Set up SSH.
+# TODO Install should work from anywhere (absolute paths).
 
 # Install apps via Homebrew, Homebrew-Cask and Mac App Store
 source install/apps.sh
