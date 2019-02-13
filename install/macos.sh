@@ -88,6 +88,9 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # Always use list view.
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
+# Open directories in new windows instead of tabs.
+defaults write com.apple.finder FinderSpwanTab -bool false
+
 
 ################################################################################
 # Dock                                                                         #
