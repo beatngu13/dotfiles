@@ -42,6 +42,7 @@ brew cask install gpg-suite
 brew cask install intellij-idea-ce
 brew cask install java8
 brew cask install jd-gui
+brew cask install karabiner-elements
 brew cask install keepassxc
 brew cask install keka
 brew cask install libreoffice-still
