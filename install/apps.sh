@@ -3,8 +3,9 @@
 # Install Homebrew.
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew tap caskroom/versions
 brew tap caskroom/cask
+brew tap caskroom/versions
+brew tap homebrew/cask-drivers
 brew tap AdoptOpenJDK/openjdk
 
 # TODO Use brew install "${brew_apps[@]}" without abort or Brewfile (see https://github.com/holman/dotfiles/).
@@ -44,6 +45,7 @@ brew cask install jd-gui
 brew cask install keepassxc
 brew cask install keka
 brew cask install libreoffice-still
+brew cask install logitech-options
 brew cask install mactex
 brew cask install microsoft-office
 brew cask install skype
@@ -71,6 +73,3 @@ brew install scala
 mas install 1295203466
 # Keynote.
 mas install 409183694
-
-# Install manually.
-# Logitech Options.
