@@ -24,6 +24,7 @@ brew install neofetch
 brew install pandoc
 brew install pdfgrep
 brew install pyenv-virtualenv
+brew install tree
 
 # Homebrew-Cask apps.
 
