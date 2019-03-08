@@ -48,6 +48,9 @@ if which jenv >/dev/null; then
     eval "$(jenv init -)"
 fi
 
+# Set Java home variable manually (see https://github.com/jenv/jenv/issues/44/).
+export JAVA_HOME="$(jenv prefix)"
+
 # Enable Bash completion.
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     source $(brew --prefix)/etc/bash_completion
