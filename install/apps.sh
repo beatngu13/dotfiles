@@ -20,6 +20,7 @@ brew install git
 brew install graphviz
 brew install jenv
 brew install mas
+brew install mkdocs
 brew install neofetch
 brew install pandoc
 brew install pdfgrep
