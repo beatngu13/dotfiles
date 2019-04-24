@@ -30,7 +30,7 @@ brew install tree
 # Homebrew-Cask apps.
 
 brew cask install adobe-acrobat-reader
-brew cask install adoptopenjdk
+brew cask install adoptopenjdk11
 brew cask install adoptopenjdk8
 brew cask install chromedriver
 brew cask install diffmerge
