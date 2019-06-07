@@ -24,6 +24,7 @@ brew install mkdocs
 brew install neofetch
 brew install pandoc
 brew install pdfgrep
+# TODO Needs additional dependencies.
 brew install pyenv-virtualenv
 brew install tree
 
