@@ -49,8 +49,8 @@ if which jenv >/dev/null; then
 fi
 
 # Enable Bash completion.
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    source $(brew --prefix)/etc/bash_completion
+if [ -f "$(brew --prefix)"/etc/bash_completion ]; then
+    source "$(brew --prefix)"/etc/bash_completion
 fi
 
 # Enable auto-activation of virtualenvs.
