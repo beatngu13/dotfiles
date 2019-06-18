@@ -6,3 +6,9 @@ function rtbuild() {
     echo "Execute clean verify (without tests, obfuscation, and license download) ..."
     mvn clean verify -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true "$@"
 }
+
+# Trigger Maven release.
+function rtrelease() {
+    echo "Trigger release (without tests and GPG) ..."
+    mvn -Darguments="-DskipTests -Dgpg.skip" release:prepare release:perform
+}
