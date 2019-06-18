@@ -9,6 +9,12 @@ function rtbuild() {
 
 # Trigger Maven release.
 function rtrelease() {
+    release_version="$1"
+    next_version="$2"
     echo "Trigger release (without tests and GPG) ..."
-    mvn -Darguments="-DskipTests -Dgpg.skip" release:prepare release:perform
+    mvn release:prepare release:perform \
+            -Darguments="-DskipTests -Dgpg.skip" \
+            -DreleaseVersion="${release_version}" \
+            -Dtag="v${release_version}" \
+            -DdevelopmentVersion="${next_version}-SNAPSHOT"
 }
