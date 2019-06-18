@@ -3,6 +3,6 @@ export VAGRANT_SERVER_URL="http://192.168.178.51/boxes"
 
 # Execute fast Maven build.
 function rtbuild() {
-    echo "Execute clean install (offline, without tests, obfuscation, and license download) ..."
-    mvn clean install --offline -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true "$@"
+    echo "Execute clean verify (without tests, obfuscation, and license download) ..."
+    mvn clean verify -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true "$@"
 }
