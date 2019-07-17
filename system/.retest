@@ -18,3 +18,12 @@ function rtrelease() {
             -Dtag="v${release_version}" \
             -DdevelopmentVersion="${next_version}"
 }
+
+# Show dependency graph for de.retest:*.
+function degraph() {
+    mvn depgraph:aggregate \
+            -DcreateImage \
+            -DincludeParentProjects \
+            -Dincludes=de.retest:* \
+            -DshowVersions
+}
