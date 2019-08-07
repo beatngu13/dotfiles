@@ -27,6 +27,7 @@ brew install pdfgrep
 # TODO Needs additional dependencies.
 brew install pyenv-virtualenv
 brew install tree
+brew install wget
 
 # Homebrew-Cask apps.
 
