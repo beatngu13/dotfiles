@@ -78,3 +78,5 @@ brew install scala
 mas install 1295203466
 # Keynote.
 mas install 409183694
+# Xcode.
+mas install 497799835
