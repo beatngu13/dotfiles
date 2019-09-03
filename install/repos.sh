@@ -31,4 +31,3 @@ git clone git@github.com:retest/recheck.git
 git clone git@github.com:retest/recheck.cli.git
 git clone git@github.com:retest/recheck-web.git
 git clone git@github.com:retest/surili-commons.git
-git clone git@github.com:retest/surili-parent.git
