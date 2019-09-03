@@ -74,9 +74,9 @@ brew install scala
 
 # Mac App Store apps.
 
-# Microsoft Remote Desktop 10.
-mas install 1295203466
 # Keynote.
 mas install 409183694
+# Microsoft Remote Desktop 10.
+mas install 1295203466
 # Xcode.
 mas install 497799835
