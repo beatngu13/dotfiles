@@ -48,6 +48,14 @@ function jshell() {
     ~/.jenv/versions/11.0/bin/jshell
 }
 
+# Use JShell with Java 11 in current Maven project.
+function mvnjshell() {
+    java_version_backup="$(jenv version-name)"
+    jenv shell 11.0
+    mvn jshell:run -DtestClasspath
+    jenv shell "${java_version_backup}"
+}
+
 # Init jenv.
 if which jenv >/dev/null; then
     eval "$(jenv init -)"
