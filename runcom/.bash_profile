@@ -38,7 +38,7 @@ function up() {
 
 # Remove directory content without deleting the directory itself.
 function rmc() {
-    dir="$1"
+    dir="${1}"
     rm -r "${dir}"
     mkdir "${dir}"
 }
