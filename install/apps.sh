@@ -40,7 +40,6 @@ brew cask install eclipse-installer
 brew cask install firefox
 brew cask install gimp
 brew cask install google-chrome
-brew cask install google-drive-file-stream
 brew cask install gpg-suite
 brew cask install intellij-idea-ce
 brew cask install java8
@@ -77,5 +76,7 @@ brew install scala
 mas install 409183694
 # Microsoft Remote Desktop 10.
 mas install 1295203466
+# OX Drive.
+mas install 818195014
 # Xcode.
 mas install 497799835
