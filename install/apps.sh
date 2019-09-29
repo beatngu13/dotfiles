@@ -20,12 +20,10 @@ brew install git
 brew install graphviz
 brew install jenv
 brew install mas
-brew install mkdocs
 brew install neofetch
 brew install pandoc
 brew install pdfgrep
-# TODO Needs additional dependencies.
-brew install pyenv-virtualenv
+brew install python@2
 brew install tree
 brew install wget
 
