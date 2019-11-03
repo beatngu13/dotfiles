@@ -21,8 +21,8 @@ source install/macos.sh
 # Wait for Dropbox setup (e.g. because of symlinks).
 read -p "Please set up Dropbox and then press 'Enter' to continue."
 
-# Source .bash_profile.
-source runcom/.bash_profile
+# Source .zprofile.
+source runcom/.zprofile
 
 # Set up symlinks.
 source install/symlinks.sh

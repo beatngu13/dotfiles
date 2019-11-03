@@ -1,5 +1,5 @@
-# Edit .bash_profile from dotfiles repo.
-alias bashedit='${EDITOR} ${DOTFILES_PATH}/runcom/.bash_profile'
+# Edit .zprofile in editor.
+alias zpedit='${EDITOR} ${DOTFILES_PATH}/runcom/.zprofile'
 # Show hidden files.
 alias showall='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
 # Hide hidden files.

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ln -sfv "${DOTFILES_PATH}"/runcom/.bash_profile ~
+ln -sfv "${DOTFILES_PATH}"/runcom/.zprofile ~
 
 ln -sfv "${DOTFILES_PATH}"/git/.gitconfig ~
 ln -sfv "${DOTFILES_PATH}"/git/.gitconfig_retest ~
