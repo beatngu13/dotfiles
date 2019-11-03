@@ -1,5 +1,5 @@
-# Edit .zprofile in editor.
-alias zpedit='${EDITOR} ${DOTFILES_PATH}/runcom/.zprofile'
+# Edit .zshrc in editor.
+alias zshrcedit='${EDITOR} ${DOTFILES_PATH}/runcom/.zshrc'
 # Show hidden files.
 alias showall='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
 # Hide hidden files.
