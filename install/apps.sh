@@ -13,7 +13,6 @@ brew tap AdoptOpenJDK/openjdk
 
 # Homebrew apps.
 
-brew install bash-completion
 brew install dockutil
 brew install geckodriver
 brew install git
