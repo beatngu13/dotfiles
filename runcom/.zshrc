@@ -69,3 +69,12 @@ eval "$(pyenv virtualenv-init -)"
 for dotfile in ${DOTFILES_PATH}/system/.*; do
     [ -f "${dotfile}" ] && source "${dotfile}"
 done
+
+# Enable Homebrew autocompletion in ZSH.
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
+
+# Enable ZSH completion.
+autoload -Uz compinit
+compinit
