@@ -61,6 +61,9 @@ if which jenv >/dev/null; then
     eval "$(jenv init -)"
 fi
 
+# Init Travis CLI.
+[ -f /Users/kruse/.travis/travis.sh ] && source /Users/kruse/.travis/travis.sh
+
 # Enable auto-activation of virtualenvs.
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
