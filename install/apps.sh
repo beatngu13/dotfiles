@@ -47,6 +47,7 @@ brew cask install libreoffice-still
 brew cask install logitech-options
 brew cask install mactex
 brew cask install microsoft-office
+brew cask install nextcloud
 brew cask install skype
 brew cask install slack
 brew cask install sourcetree
@@ -73,7 +74,5 @@ brew install scala
 mas install 409183694
 # Microsoft Remote Desktop 10.
 mas install 1295203466
-# OX Drive.
-mas install 818195014
 # Xcode.
 mas install 497799835
