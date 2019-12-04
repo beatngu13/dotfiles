@@ -9,7 +9,7 @@
 	helper = osxkeychain
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [includeIf "gitdir:~/dev/workspaces/retest/"]
 	path = ~/.gitconfig_retest
 [mergetool "sourcetree"]
