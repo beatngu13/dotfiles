@@ -9,7 +9,6 @@ brew tap homebrew/cask-drivers
 brew tap AdoptOpenJDK/openjdk
 
 # TODO Use brew install "${brew_apps[@]}" without abort or Brewfile (see https://github.com/holman/dotfiles/).
-# TODO Add build tools for other languages (Leiningen, sbt, etc.).
 
 # Homebrew apps.
 
@@ -64,9 +63,11 @@ brew cask install whatsapp
 # Homebrew misc (require apps from above).
 
 # Require Java.
-brew install clojure
-brew install gradle
 brew install maven
+brew install gradle
+brew install leiningen
+brew install clojure
+brew install sbt
 brew install scala
 
 # Mac App Store apps.
