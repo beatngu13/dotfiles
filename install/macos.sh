@@ -54,6 +54,9 @@ defaults write com.apple.BezelServices kDimTime -int 300
 # Disable auto-correct.
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Paste and match style as default.
+defaults write NSUserKeyEquivalents '{ "Paste and Match Style" = "@v"; }'
+
 
 ################################################################################
 # Screen                                                                       #
