@@ -48,10 +48,10 @@ brew cask install logitech-options
 brew cask install mactex
 brew cask install microsoft-office
 brew cask install nextcloud
+brew cask install rectangle
 brew cask install skype
 brew cask install slack
 brew cask install sourcetree
-brew cask install spectacle
 brew cask install spotify
 brew cask install spotmenu
 brew cask install vagrant
