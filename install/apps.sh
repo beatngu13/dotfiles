@@ -38,6 +38,7 @@ brew cask install firefox
 brew cask install gimp
 brew cask install google-chrome
 brew cask install gpg-suite
+brew cask install insomnia
 brew cask install intellij-idea-ce
 brew cask install java8
 brew cask install jd-gui
