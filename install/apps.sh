@@ -4,8 +4,8 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew tap caskroom/cask
-brew tap caskroom/versions
 brew tap homebrew/cask-drivers
+brew tap homebrew/cask-versions
 brew tap AdoptOpenJDK/openjdk
 
 # TODO Use brew install "${brew_apps[@]}" without abort or Brewfile (see https://github.com/holman/dotfiles/).
