@@ -56,6 +56,20 @@ function mvnjshell() {
     jenv shell "${java_version_backup}"
 }
 
+# Convert Markdown to PDF.
+function md2pdf() {
+    md_filename="${1}"
+    pdf_filename="${md_filename%.*}".pdf
+    pandoc --from gfm --to pdf --output "${pdf_filename}" "${md_filename}"
+}
+
+# Convert Markdown to HTML.
+function md2html() {
+    md_filename="${1}"
+    html_filename="${md_filename%.*}".html
+    pandoc --self-contained --from gfm --to html --output "${html_filename}" "${md_filename}"
+}
+
 # Init jenv.
 if which jenv >/dev/null; then
     eval "$(jenv init -)"
