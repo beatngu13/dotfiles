@@ -1,14 +1,18 @@
-# Set Vagrant server URL.
-export VAGRANT_SERVER_URL="http://192.168.178.51/boxes"
+# Use JShell with Java 11.
+function jshell() {
+    ~/.jenv/versions/11.0/bin/jshell
+}
 
-# Execute fast Maven build.
-function rtbuild() {
-    echo "Execute clean verify (without tests, obfuscation, and license download) ..."
-    mvn clean verify -DskipTests -Dproguard.skip=true -Dlicense.skipDownloadLicenses=true "$@"
+# Use JShell with Java 11 in current Maven project.
+function mvnjshell() {
+    java_version_backup="$(jenv version-name)"
+    jenv shell 11.0
+    mvn jshell:run -DtestClasspath
+    jenv shell "${java_version_backup}"
 }
 
 # Trigger Maven release.
-function rtrelease() {
+function mvnrelease() {
     release_version="${1}"
     next_version="${2}"
     echo "Trigger release (without tests and GPG) for ${release_version}, next is ${next_version} ..."
@@ -19,11 +23,13 @@ function rtrelease() {
             -DdevelopmentVersion="${next_version}"
 }
 
-# Show dependency graph for de.retest:*.
-function degraph() {
+# Show dependency graph for a given package.
+# See "includes": https://github.com/ferstl/depgraph-maven-plugin#faq
+function mvndegraph() {
+    package="${1}"
     mvn depgraph:aggregate \
             -DcreateImage \
             -DincludeParentProjects \
-            -Dincludes=de.retest:* \
+            -Dincludes="${package}" \
             -DshowVersions
 }

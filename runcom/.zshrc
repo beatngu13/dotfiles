@@ -21,55 +21,6 @@ export EDITOR=code
 # Set default language.
 export LANG=en_US.UTF-8
 
-# Update Homebrew, Homebrew-Cask and Mac App Store.
-function up() {
-    sudo -v
-
-    echo "Update and upgrade Homebrew ..."
-    brew update
-    brew upgrade
-
-    echo "Upgrade Homebrew-Cask ..."
-    brew cask upgrade
-
-    echo "Upgrade Mac App Store ..."
-    mas upgrade
-}
-
-# Remove directory content without deleting the directory itself.
-function rmc() {
-    dir="${1}"
-    rm -r "${dir}"
-    mkdir "${dir}"
-}
-
-# Use JShell with Java 11.
-function jshell() {
-    ~/.jenv/versions/11.0/bin/jshell
-}
-
-# Use JShell with Java 11 in current Maven project.
-function mvnjshell() {
-    java_version_backup="$(jenv version-name)"
-    jenv shell 11.0
-    mvn jshell:run -DtestClasspath
-    jenv shell "${java_version_backup}"
-}
-
-# Convert Markdown to PDF.
-function md2pdf() {
-    md_filename="${1}"
-    pdf_filename="${md_filename%.*}".pdf
-    pandoc --from gfm --to pdf --output "${pdf_filename}" "${md_filename}"
-}
-
-# Convert Markdown to HTML.
-function md2html() {
-    md_filename="${1}"
-    html_filename="${md_filename%.*}".html
-    pandoc --self-contained --from gfm --to html --output "${html_filename}" "${md_filename}"
-}
-
 # Init jenv.
 if which jenv >/dev/null; then
     eval "$(jenv init -)"
