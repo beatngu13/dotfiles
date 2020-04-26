@@ -18,7 +18,6 @@ cd "${RETEST_WORKSPACE_PATH}"
 git clone git@bitbucket.org:retest/bugsubmitter.git
 git clone git@bitbucket.org:retest/review.git
 git clone git@bitbucket.org:retest/surili.git
-git clone git@bitbucket.org:retest/bugsubmitter.git
 git clone git@bitbucket.org:retest/reports-2021-kmuinnovativ-surili.git
 git clone git@bitbucket.org:retest/website.git
 
