@@ -32,6 +32,8 @@ brew cask install adobe-acrobat-reader
 brew cask install adoptopenjdk11
 brew cask install adoptopenjdk8
 brew cask install chromedriver
+brew cask install discord
+brew cask install docker
 brew cask install dropbox
 brew cask install eclipse-installer
 brew cask install firefox
