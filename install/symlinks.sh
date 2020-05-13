@@ -3,6 +3,7 @@
 ln -sfv "${DOTFILES_PATH}"/runcom/.zshrc ~
 
 ln -sfv "${DOTFILES_PATH}"/git/.gitconfig ~
+# TODO Remove.
 ln -sfv "${DOTFILES_PATH}"/git/.gitconfig_retest ~
 ln -sfv "${DOTFILES_PATH}"/git/.gitignore_global ~
 
