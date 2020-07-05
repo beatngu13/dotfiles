@@ -50,6 +50,7 @@ brew cask install libreoffice-still
 brew cask install logitech-options
 brew cask install mactex
 brew cask install microsoft-office
+brew cask install monitorcontrol
 brew cask install nextcloud
 brew cask install rectangle
 brew cask install skype
@@ -81,3 +82,7 @@ mas install 409183694
 mas install 1295203466
 # Xcode.
 mas install 497799835
+
+# Manuall installation.
+
+# AusweisApp2
