@@ -25,6 +25,15 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 # Disable sound effects on boot.
 sudo nvram SystemAudioVolume=" "
 
+# Set up menu items.
+defaults write com.apple.systemuiserver menuExtras -array \
+    "/System/Library/CoreServices/Menu Extras/Bluetooth.menu", \
+    "/System/Library/CoreServices/Menu Extras/User.menu", \
+    "/System/Library/CoreServices/Menu Extras/Clock.menu", \
+    "/System/Library/CoreServices/Menu Extras/Battery.menu", \
+    "/System/Library/CoreServices/Menu Extras/AirPort.menu", \
+    "/System/Library/CoreServices/Menu Extras/Displays.menu"
+
 # Show battery percentage in menu bar.
 defaults write com.apple.menuextra.battery ShowPercent YES
 
