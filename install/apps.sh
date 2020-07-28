@@ -58,6 +58,7 @@ brew cask install slack
 brew cask install sourcetree
 brew cask install spotify
 brew cask install spotmenu
+brew cask install tex-live-utility
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install visual-studio-code
