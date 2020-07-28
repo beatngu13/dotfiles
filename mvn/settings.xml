@@ -1,0 +1,22 @@
+<settings>
+	<profiles>
+		<profile>
+			<id>downloadSourcesAndJavadoc</id>
+			<properties>
+				<downloadSources>true</downloadSources>
+				<downloadJavadocs>true</downloadJavadocs>
+			</properties>
+		</profile>
+	</profiles>
+
+	<activeProfiles>
+		<activeProfile>downloadSourcesAndJavadoc</activeProfile>
+	</activeProfiles>
+
+	<pluginGroups>
+		<!-- https://github.com/ferstl/depgraph-maven-plugin/ -->
+		<pluginGroup>com.github.ferstl</pluginGroup>
+		<!-- https://github.com/johnpoth/jshell-maven-plugin/ -->
+		<pluginGroup>com.github.johnpoth</pluginGroup>
+	</pluginGroups>
+</settings>

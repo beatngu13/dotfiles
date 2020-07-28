@@ -9,4 +9,4 @@ ln -sfv "${DOTFILES_PATH}"/git/.stCommitMsg ~
 ln -sfv "${DOTFILES_PATH}"/etc/vagrant/Vagrantfile ~/.vagrant.d
 
 mkdir ~/.m2/
-ln -sfv "${DROPBOX_DOTFILES_PATH}"/mvn/settings.xml ~/.m2/settings.xml
+ln -sfv "${DOTFILES_PATH}"/mvn/settings.xml ~/.m2/settings.xml
