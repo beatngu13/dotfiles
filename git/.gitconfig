@@ -10,11 +10,11 @@
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
-# TODO Remove.
-[includeIf "gitdir:~/dev/workspaces/retest/"]
-	path = ~/.gitconfig_retest
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+# TODO Remove.
+[includeIf "gitdir:~/dev/workspaces/retest/"]
+	path = ~/.gitconfig_retest
 [pull]
 	rebase = true
