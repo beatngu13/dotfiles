@@ -4,6 +4,7 @@ ln -sfv "${DOTFILES_PATH}"/runcom/.zshrc ~
 
 ln -sfv "${DOTFILES_PATH}"/git/.gitconfig ~
 ln -sfv "${DOTFILES_PATH}"/git/.gitignore_global ~
+ln -sfv "${DOTFILES_PATH}"/git/.stCommitMsg ~
 
 ln -sfv "${DOTFILES_PATH}"/etc/vagrant/Vagrantfile ~/.vagrant.d
 
