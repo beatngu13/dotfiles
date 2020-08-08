@@ -18,7 +18,7 @@ source install/apps.sh
 # Configure macOS.
 source install/macos.sh
 
-# Wait for Dropbox setup (e.g. because of symlinks).
+# Wait for Dropbox setup (e.g. because of SSH setup).
 read -p "Please set up Dropbox and then press 'Enter' to continue."
 
 # Source .zshrc.
