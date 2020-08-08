@@ -35,7 +35,6 @@ brew cask install chromedriver
 brew cask install discord
 brew cask install docker
 brew cask install dropbox
-brew cask install eclipse-installer
 brew cask install firefox
 brew cask install gimp
 brew cask install google-chrome
