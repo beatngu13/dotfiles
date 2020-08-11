@@ -22,7 +22,7 @@ brew install neofetch
 brew install pandoc
 brew install pdfgrep
 brew install python@2
-brew install travis
+brew install nektos/tap/act
 brew install tree
 brew install wget
 
