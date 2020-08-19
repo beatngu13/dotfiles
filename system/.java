@@ -15,11 +15,9 @@ function mvnjshell() {
 function mvnrelease() {
     release_version="${1}"
     next_version="${2}"
-    echo "Trigger release (without tests and GPG) for ${release_version}, next is ${next_version} ..."
-    mvn release:prepare release:perform \
-            -Darguments="-DskipTests -Dgpg.skip" \
+    mvn release:prepare release:perform --batch \
+            -Darguments="-DskipTests" \
             -DreleaseVersion="${release_version}" \
-            -Dtag="v${release_version}" \
             -DdevelopmentVersion="${next_version}"
 }
 
