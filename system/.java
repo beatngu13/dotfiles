@@ -15,7 +15,7 @@ function mvnjshell() {
 function mvnrelease() {
     release_version="${1}"
     next_version="${2}"
-    mvn release:prepare release:perform --batch \
+    mvn release:prepare release:perform --batch-mode \
             -Darguments="-DskipTests" \
             -DreleaseVersion="${release_version}" \
             -DdevelopmentVersion="${next_version}"
