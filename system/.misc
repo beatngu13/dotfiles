@@ -1,5 +1,12 @@
+# Remove directory content without deleting the directory itself.
+function rmc() {
+    dir="${1}"
+    rm -r "${dir}"
+    mkdir "${dir}"
+}
+
 # Update Homebrew, Homebrew-Cask and Mac App Store.
-function up() {
+function brew_up() {
     sudo -v
 
     echo "Update and upgrade Homebrew ..."
@@ -13,9 +20,8 @@ function up() {
     mas upgrade
 }
 
-# Remove directory content without deleting the directory itself.
-function rmc() {
-    dir="${1}"
-    rm -r "${dir}"
-    mkdir "${dir}"
+# Prune Git tags.
+function git_prune_tags() {
+    git tag --list | xargs git tag --delete
+    git fetch --tags
 }
