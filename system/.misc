@@ -9,12 +9,11 @@ function rmc() {
 function brew_up() {
     sudo -v
 
-    echo "Update and upgrade Homebrew ..."
+    echo "Update Homebrew ..."
     brew update
-    brew upgrade
 
-    echo "Upgrade Homebrew-Cask ..."
-    brew cask upgrade
+    echo "Upgrade Homebrew ..."
+    brew upgrade
 
     echo "Upgrade Mac App Store ..."
     mas upgrade
