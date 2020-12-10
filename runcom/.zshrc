@@ -4,6 +4,8 @@ alias zshrcedit='${EDITOR} ${DOTFILES_PATH}/runcom/.zshrc'
 alias showall='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
 # Hide hidden files.
 alias hideall='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
+# Unix timestamp in seconds.
+alias timestamp='date +%s'
 
 # Set up various paths.
 export DOTFILES_PATH="${HOME}"/.dotfiles/
