@@ -1,9 +1,9 @@
 # Edit .zshrc in editor.
-alias zshrcedit='${EDITOR} ${DOTFILES_PATH}/runcom/.zshrc'
+alias edit_zshrc='${EDITOR} ${DOTFILES_PATH}/runcom/.zshrc'
 # Show hidden files.
-alias showall='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
+alias show_all='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
 # Hide hidden files.
-alias hideall='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
+alias hide_all='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
 # Unix timestamp in seconds.
 alias timestamp='date +%s'
 

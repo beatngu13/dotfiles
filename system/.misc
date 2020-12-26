@@ -6,7 +6,7 @@ function rmc() {
 }
 
 # Update Homebrew, Homebrew-Cask and Mac App Store.
-function brew_up() {
+function update_all() {
     sudo -v
 
     echo "Update Homebrew ..."
