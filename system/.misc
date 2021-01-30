@@ -5,7 +5,7 @@ function rmc() {
     mkdir "${dir}"
 }
 
-# Update Homebrew, Homebrew-Cask and Mac App Store.
+# Update Homebrew and Mac App Store.
 function update_all() {
     sudo -v
 

@@ -3,7 +3,6 @@
 # Install Homebrew.
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew tap caskroom/cask
 brew tap homebrew/cask-drivers
 brew tap homebrew/cask-versions
 brew tap AdoptOpenJDK/openjdk
@@ -26,43 +25,43 @@ brew install nektos/tap/act
 brew install tree
 brew install wget
 
-# Homebrew-Cask apps.
+# Homebrew Cask apps.
 
-brew cask install adobe-acrobat-reader
-brew cask install adoptopenjdk11
-brew cask install adoptopenjdk8
-brew cask install chromedriver
-brew cask install discord
-brew cask install docker
-brew cask install dropbox
-brew cask install firefox
-brew cask install gimp
-brew cask install google-chrome
-brew cask install gpg-suite
-brew cask install insomnia
-brew cask install intellij-idea-ce
-brew cask install java8
-brew cask install jd-gui
-brew cask install keepassxc
-brew cask install keka
-brew cask install libreoffice-still
-brew cask install logitech-options
-brew cask install mactex
-brew cask install microsoft-office
-brew cask install monitorcontrol
-brew cask install nextcloud
-brew cask install rectangle
-brew cask install skype
-brew cask install slack
-brew cask install sourcetree
-brew cask install spotify
-brew cask install spotmenu
-brew cask install tex-live-utility
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install visual-studio-code
-brew cask install vlc
-brew cask install whatsapp
+brew install adobe-acrobat-reader
+brew install adoptopenjdk11
+brew install adoptopenjdk8
+brew install chromedriver
+brew install discord
+brew install docker
+brew install dropbox
+brew install firefox
+brew install gimp
+brew install google-chrome
+brew install gpg-suite
+brew install insomnia
+brew install intellij-idea-ce
+brew install java8
+brew install jd-gui
+brew install keepassxc
+brew install keka
+brew install libreoffice-still
+brew install logitech-options
+brew install mactex
+brew install microsoft-office
+brew install monitorcontrol
+brew install nextcloud
+brew install rectangle
+brew install skype
+brew install slack
+brew install sourcetree
+brew install spotify
+brew install spotmenu
+brew install tex-live-utility
+brew install vagrant
+brew install virtualbox
+brew install visual-studio-code
+brew install vlc
+brew install whatsapp
 
 # Homebrew misc (require apps from above).
 
