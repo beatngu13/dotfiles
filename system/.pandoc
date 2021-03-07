@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # Convert Markdown to PDF.
 function md2pdf() {
     md_filename="${1}"

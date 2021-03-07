@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # Use JShell with Java 11.
 function jshell() {
     ~/.jenv/versions/11.0/bin/jshell

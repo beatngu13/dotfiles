@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # Remove directory content without deleting the directory itself.
 function rmc() {
     dir="${1}"
