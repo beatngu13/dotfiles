@@ -15,10 +15,6 @@ export DROPBOX_DOTFILES_PATH="${HOME}"/Dropbox/Kruse/dotfiles/
 export WORKSPACES_PATH="${HOME}"/dev/workspaces/
 export PRIVATE_WORKSPACE_PATH="${WORKSPACES_PATH}"/private/
 
-# Set terminal colors.
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-
 # Set default editor.
 export EDITOR="code --wait"
 
