@@ -29,10 +29,6 @@ if which jenv >/dev/null; then
     eval "$(jenv init -)"
 fi
 
-# Enable auto-activation of virtualenvs.
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
 # Source other dotfiles.
 for dotfile in ${DOTFILES_PATH}/system/.*; do
     [ -f "${dotfile}" ] && source "${dotfile}"
