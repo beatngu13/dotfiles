@@ -28,6 +28,7 @@ brew install wget
 # Homebrew Cask apps.
 
 brew install adobe-acrobat-reader
+brew install adoptopenjdk15
 brew install adoptopenjdk11
 brew install adoptopenjdk8
 brew install chromedriver
@@ -37,7 +38,6 @@ brew install dropbox
 brew install firefox
 brew install gimp
 brew install google-chrome
-brew install gpg-suite
 brew install insomnia
 brew install intellij-idea-ce
 brew install java8
@@ -47,9 +47,7 @@ brew install keka
 brew install libreoffice-still
 brew install logitech-options
 brew install mactex
-brew install microsoft-office
 brew install monitorcontrol
-brew install nextcloud
 brew install rectangle
 brew install skype
 brew install slack
@@ -68,10 +66,8 @@ brew install whatsapp
 # Require Java.
 brew install maven
 brew install gradle
-brew install leiningen
+brew install boot-clj
 brew install clojure
-brew install sbt
-brew install scala
 
 # Mac App Store apps.
 
