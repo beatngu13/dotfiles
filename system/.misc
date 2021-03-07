@@ -20,3 +20,13 @@ function update_all() {
     echo "Upgrade Mac App Store ..."
     mas upgrade
 }
+
+# Snapshot and compare system defaults.
+function defaults_snapshot() {
+    defaults read > /tmp/defaults_before.txt
+}
+
+function defaults_compare() {
+    defaults read > /tmp/defaults_after.txt
+    diff /tmp/defaults_before.txt /tmp/defaults_after.txt
+}
