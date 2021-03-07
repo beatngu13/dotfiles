@@ -4,5 +4,12 @@
 # Finder desktop service stores.
 .DS_Store
 
-# jenv files.
+# IntelliJ project settings.
+*.iml
+.idea/
+
+# Maven build output.
+target/
+
+# jEnv Java version.
 .java-version
