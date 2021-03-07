@@ -23,3 +23,9 @@ And then go to `~/.dotfiles/` to invoke the installation script:
 cd ~/.dotfiles/
 source install.sh
 ```
+
+## Layout
+
+* `config`: Configuration files like `.gitconfig` (Git), `settings.xml` (Maven) and `.zshrc` (ZSH).
+* `install`: Installation files to e.g. set up apps, repositories and symlinks.
+* `system`: Additional dotfiles.
