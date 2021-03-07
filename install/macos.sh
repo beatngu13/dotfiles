@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 # TODO Set up firewall.
 # TODO Set up power settings.

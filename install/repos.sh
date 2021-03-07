@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 mkdir -p "${PRIVATE_WORKSPACE_PATH}"
 cd "${PRIVATE_WORKSPACE_PATH}"

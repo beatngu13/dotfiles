@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
 ln -sfv "${DOTFILES_PATH}"/runcom/.zshrc ~
 
