@@ -20,7 +20,7 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Set default editor.
-export EDITOR=code
+export EDITOR="code --wait"
 
 # Set default language.
 export LANG=en_US.UTF-8
