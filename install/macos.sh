@@ -149,9 +149,11 @@ defaults write com.apple.mail ConversationViewSortDescending -bool true
 # Only use UTF-8.
 defaults write com.apple.terminal StringEncodings -array 4
 
-# Use "Pro" theme.
-defaults write com.apple.terminal "Default Window Settings" -string "Pro"
-defaults write com.apple.terminal "Startup Window Settings" -string "Pro"
+# Use "Homebrew" theme.
+defaults write com.apple.terminal "Default Window Settings" -string "Homebrew"
+defaults write com.apple.terminal "Startup Window Settings" -string "Homebrew"
+
+# TODO Use plutil to tweak Homebrew (see https://stackoverflow.com/a/41215582).
 
 
 ################################################################################
