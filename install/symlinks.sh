@@ -1,13 +1,13 @@
 #!/usr/bin/env sh
 
-ln -sfv "${DOTFILES_PATH}"/runcom/.zshrc ~
+ln -sfv "${CONFIG_PATH}"/zsh/.zshrc ~
 
-ln -sfv "${DOTFILES_PATH}"/git/.gitconfig ~
-ln -sfv "${DOTFILES_PATH}"/git/.gitignore_global ~
+ln -sfv "${CONFIG_PATH}"/git/.gitconfig ~
+ln -sfv "${CONFIG_PATH}"/git/.gitignore_global ~
 
-ln -sfv "${DOTFILES_PATH}"/act/.actrc ~
+ln -sfv "${CONFIG_PATH}"/act/.actrc ~
 
-ln -sfv "${DOTFILES_PATH}"/etc/vagrant/Vagrantfile ~/.vagrant.d
+ln -sfv "${CONFIG_PATH}"/etc/vagrant/Vagrantfile ~/.vagrant.d
 
 mkdir ~/.m2/
-ln -sfv "${DOTFILES_PATH}"/mvn/settings.xml ~/.m2/settings.xml
+ln -sfv "${CONFIG_PATH}"/maven/settings.xml ~/.m2/settings.xml

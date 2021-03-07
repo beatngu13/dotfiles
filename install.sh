@@ -22,7 +22,7 @@ source install/macos.sh
 read -p "Please set up Dropbox and then press 'Enter' to continue."
 
 # Source .zshrc.
-source runcom/.zshrc
+source config/zsh/.zshrc
 
 # Set up symlinks.
 source install/symlinks.sh

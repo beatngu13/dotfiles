@@ -1,5 +1,5 @@
 # Edit .zshrc in editor.
-alias edit_zshrc='${EDITOR} ${DOTFILES_PATH}/runcom/.zshrc'
+alias edit_zshrc='${EDITOR} ${CONFIG_PATH}/zsh/.zshrc'
 # Show hidden files.
 alias show_all='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
 # Hide hidden files.
@@ -9,6 +9,7 @@ alias timestamp='date +%s'
 
 # Set up various paths.
 export DOTFILES_PATH="${HOME}"/.dotfiles/
+export CONFIG_PATH="${DOTFILES_PATH}"/config/
 export DROPBOX_DOTFILES_PATH="${HOME}"/Dropbox/Kruse/dotfiles/
 # TODO Do not use dev/ directory.
 export WORKSPACES_PATH="${HOME}"/dev/workspaces/
