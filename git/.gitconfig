@@ -3,8 +3,6 @@
 	email = daniel.kraus@mailbox.org
 [core]
 	excludesfile = ~/.gitignore_global
-[commit]
-	template = ~/.stCommitMsg
 [credential]
 	helper = osxkeychain
 [difftool "sourcetree"]
@@ -15,3 +13,5 @@
 	trustExitCode = true
 [pull]
 	rebase = true
+[rebase]
+	autostash = true
