@@ -18,9 +18,3 @@ function update_all() {
     echo "Upgrade Mac App Store ..."
     mas upgrade
 }
-
-# Prune Git tags.
-function git_prune_tags() {
-    git tag --list | xargs git tag --delete
-    git fetch --tags
-}
