@@ -33,7 +33,7 @@ done
 
 # Enable Homebrew autocompletion in ZSH.
 if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+    FPATH=$(brew --prefix)/share/zsh/site-functions:${FPATH}
 fi
 
 # Enable ZSH completion.
