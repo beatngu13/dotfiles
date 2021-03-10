@@ -12,13 +12,13 @@ done &>/dev/null &
 
 # Execute installation scripts (order matters).
 
-# Install apps via Homebrew, Homebrew-Cask and Mac App Store
+# Install apps via Homebrew, Homebrew-Cask and Mac App Store.
 source install/apps.sh
 
 # Configure macOS.
 source install/macos.sh
 
-# Wait for Dropbox setup (e.g. because of SSH setup).
+# Wait for Dropbox setup (e.g. for SSH).
 read -p "Please set up Dropbox and then press 'Enter' to continue."
 
 # Source .zshrc.
