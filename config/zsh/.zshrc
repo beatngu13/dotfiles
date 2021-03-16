@@ -14,6 +14,11 @@ export DROPBOX_DOTFILES_PATH="${HOME}"/Dropbox/Kruse/dotfiles/
 # TODO Do not use dev/ directory.
 export WORKSPACES_PATH="${HOME}"/dev/workspaces/
 export PRIVATE_WORKSPACE_PATH="${WORKSPACES_PATH}"/private/
+# TODO xattr -r -d com.apple.quarantine /Library/Java/JavaVirtualMachines/graalvm-ce-java11-21.0.0/Contents/Home
+export GRAALVM_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-21.0.0/Contents/Home/
+export PATH=\
+"${PATH}":\
+"${GRAALVM_HOME}"
 
 # Set default editor.
 export EDITOR="code --wait"
