@@ -38,6 +38,7 @@ brew install dropbox
 brew install firefox
 brew install gimp
 brew install google-chrome
+brew install graalvm/tap/graalvm-ce-java11
 brew install insomnia
 brew install intellij-idea-ce
 brew install java8
