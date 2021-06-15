@@ -18,6 +18,10 @@ function update_all() {
     brew upgrade
 
     echo "Upgrade Mac App Store ..."
+    # Check if signed in (see https://github.com/mas-cli/mas/issues/164/).
+    if ! mas account >/dev/null; then
+        read -p "Please open App Store to sign in and then press 'Enter' to continue."
+    fi
     mas upgrade
 }
 
