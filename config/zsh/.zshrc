@@ -20,8 +20,8 @@ export PATH=\
 "${PATH}":\
 "${GRAALVM_HOME}"
 
-# Set default editor.
-export EDITOR="code --wait"
+# Set default editor (see https://superuser.com/a/521083).
+export EDITOR="${CONFIG_PATH}"/zsh/editor.sh
 
 # Set default language.
 export LANG=en_US.UTF-8
