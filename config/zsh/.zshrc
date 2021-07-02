@@ -26,15 +26,15 @@ export EDITOR="${CONFIG_PATH}"/zsh/editor.sh
 # Set default language.
 export LANG=en_US.UTF-8
 
-# Init jenv.
-if which jenv >/dev/null; then
-    eval "$(jenv init -)"
-fi
-
 # Source other dotfiles.
 for dotfile in ${DOTFILES_PATH}/system/.*; do
     [ -f "${dotfile}" ] && source "${dotfile}"
 done
+
+# Init jenv.
+if which jenv >/dev/null; then
+    eval "$(jenv init -)"
+fi
 
 # Enable Homebrew autocompletion in ZSH.
 if type brew &>/dev/null; then
