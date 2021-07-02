@@ -36,11 +36,11 @@ if which jenv >/dev/null; then
     eval "$(jenv init -)"
 fi
 
-# Enable Homebrew autocompletion in ZSH.
-if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh/site-functions:${FPATH}
-fi
+# Set up Oh My ZSH.
+export ZSH="${HOME}"/.oh-my-zsh
 
-# Enable ZSH completion.
-autoload -Uz compinit
-compinit
+ZSH_THEME="robbyrussell"
+
+plugins=(git)
+
+source "${ZSH}"/oh-my-zsh.sh
