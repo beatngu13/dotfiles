@@ -17,6 +17,8 @@
 	ff = false
 [commit]
 	gpgsign = true
+[tag]
+	gpgsign = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
