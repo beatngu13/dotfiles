@@ -8,7 +8,6 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew tap homebrew/cask-drivers
 brew tap homebrew/cask-versions
-brew tap AdoptOpenJDK/openjdk
 
 # TODO Use brew install "${brew_apps[@]}" without abort or Brewfile (see https://github.com/holman/dotfiles/).
 
@@ -31,9 +30,6 @@ brew install wget
 # Homebrew Cask apps.
 
 brew install adobe-acrobat-reader
-brew install adoptopenjdk15
-brew install adoptopenjdk11
-brew install adoptopenjdk8
 brew install chromedriver
 brew install discord
 brew install docker
@@ -45,7 +41,6 @@ brew install gpg-suite-no-mail
 brew install graalvm/tap/graalvm-ce-java11
 brew install insomnia
 brew install intellij-idea-ce
-brew install java8
 brew install jd-gui
 brew install keepassxc
 brew install keka
@@ -59,6 +54,9 @@ brew install slack
 brew install sourcetree
 brew install spotify
 brew install spotmenu
+brew install temurin
+brew install temurin11
+brew install temurin8
 brew install tex-live-utility
 brew install vagrant
 brew install virtualbox
