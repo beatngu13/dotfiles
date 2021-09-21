@@ -1,3 +1,11 @@
+# Set up dotfiles.
+export DOTFILES_PATH="${HOME}"/.dotfiles/
+export CONFIG_PATH="${DOTFILES_PATH}"/config/
+export DROPBOX_DOTFILES_PATH="${HOME}"/Dropbox/Kruse/dotfiles/
+# TODO Do not use dev/ directory.
+export WORKSPACES_PATH="${HOME}"/dev/workspaces/
+export PRIVATE_WORKSPACE_PATH="${WORKSPACES_PATH}"/private/
+
 # Set default editor (see https://superuser.com/a/521083).
 export EDITOR="${CONFIG_PATH}"/zsh/editor.sh
 
@@ -10,14 +18,6 @@ export GRAALVM_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-21.2.0/C
 export PATH=\
 "${PATH}":\
 "${GRAALVM_HOME}"
-
-# Set up dotfiles.
-export DOTFILES_PATH="${HOME}"/.dotfiles/
-export CONFIG_PATH="${DOTFILES_PATH}"/config/
-export DROPBOX_DOTFILES_PATH="${HOME}"/Dropbox/Kruse/dotfiles/
-# TODO Do not use dev/ directory.
-export WORKSPACES_PATH="${HOME}"/dev/workspaces/
-export PRIVATE_WORKSPACE_PATH="${WORKSPACES_PATH}"/private/
 
 for dotfile in ${DOTFILES_PATH}/system/.*; do
     [ -f "${dotfile}" ] && source "${dotfile}"
