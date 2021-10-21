@@ -33,3 +33,18 @@ function mvn_degraph() {
             -Dincludes="${package}" \
             -DshowVersions
 }
+
+# Remove quarantine from GraalVM.
+# See "On Software Notarization": https://www.graalvm.org/docs/getting-started/macos/#installation-notes
+function graalvm_quarantine() {
+    graalvm_dir="{1}"
+    jvms_path=/Library/Java/JavaVirtualMachines/
+
+    sudo -v
+
+    mv "${jvms_path}${graalvm_dir}" /tmp/
+    xattr -r -d com.apple.quarantine /tmp/"${graalvm_dir}"/Contents/Home
+    mv /tmp/"${graalvm_dir}" "${jvms_path}"
+
+    echo 'Do not forget to update GRAALVM_HOME and run jenv add'
+}
