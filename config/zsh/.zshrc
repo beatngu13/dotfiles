@@ -13,8 +13,8 @@ export EDITOR="${CONFIG_PATH}"/zsh/editor.sh
 export LANG=en_US.UTF-8
 
 # Set up path.
-# TODO xattr -r -d com.apple.quarantine /Library/Java/JavaVirtualMachines/graalvm-ce-java11-21.2.0/Contents/Home
-export GRAALVM_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-21.2.0/Contents/Home/
+# TODO xattr -r -d com.apple.quarantine /Library/Java/JavaVirtualMachines/graalvm-ce-java11-21.3.0/Contents/Home
+export GRAALVM_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java11-21.3.0/Contents/Home/
 export PATH=\
 "${PATH}":\
 "${GRAALVM_HOME}"
