@@ -6,7 +6,7 @@ function jshell() {
 }
 
 # Use JShell with Java 11 in current Maven project.
-function mvnjshell() {
+function mvn_jshell() {
     java_version_backup="$(jenv version-name)"
     jenv shell 11.0
     mvn jshell:run -DtestClasspath
@@ -14,7 +14,7 @@ function mvnjshell() {
 }
 
 # Trigger Maven release.
-function mvnrelease() {
+function mvn_release() {
     release_version="${1}"
     next_version="${2}"
     mvn release:prepare release:perform --batch-mode \
@@ -25,7 +25,7 @@ function mvnrelease() {
 
 # Show dependency graph for a given package.
 # See "includes": https://github.com/ferstl/depgraph-maven-plugin#faq
-function mvndegraph() {
+function mvn_degraph() {
     package="${1}"
     mvn depgraph:aggregate \
             -DcreateImage \
