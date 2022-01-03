@@ -76,10 +76,10 @@ brew install clojure
 
 # Keynote.
 mas install 409183694
-# Microsoft Remote Desktop 10.
-mas install 1295203466
 # Xcode.
 mas install 497799835
+# Prime Video
+mas install 545519333
 
 # Manuall installation.
 
