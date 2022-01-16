@@ -38,7 +38,7 @@ brew install firefox
 brew install gimp
 brew install google-chrome
 brew install gpg-suite-no-mail
-brew install graalvm/tap/graalvm-ce-java11
+brew install graalvm/tap/graalvm-ce-java17
 brew install insomnia
 brew install intellij-idea-ce
 brew install jd-gui
