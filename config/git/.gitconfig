@@ -17,6 +17,7 @@
 	autostash = true
 [merge]
 	ff = false
+	conflictStyle = zdiff3
 [commit]
 	gpgsign = true
 [tag]
