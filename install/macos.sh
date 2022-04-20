@@ -64,6 +64,9 @@ defaults write com.apple.BezelServices kDimTime -int 300
 # Disable auto-correct.
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Show function keys in touch bar.
+defaults write com.apple.touchbar.agent PresentationModeGlobal -string "functionKeys"
+
 
 ################################################################################
 # Screen                                                                       #
