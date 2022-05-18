@@ -11,3 +11,4 @@ ln -sfv "${CONFIG_PATH}"/etc/vagrant/Vagrantfile ~/.vagrant.d
 
 mkdir ~/.m2/
 ln -sfv "${CONFIG_PATH}"/maven/settings.xml ~/.m2/settings.xml
+ln -sfv "${CONFIG_PATH}"/maven/toolchains.xml ~/.m2/toolchains.xml
