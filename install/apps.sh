@@ -55,6 +55,7 @@ brew install sourcetree
 brew install spotify
 brew install spotmenu
 brew install temurin
+brew install temurin17
 brew install temurin11
 brew install temurin8
 brew install tex-live-utility
