@@ -40,7 +40,8 @@ function graalvm_quarantine() {
     graalvm_dir="${1}"
     jvms_path=/Library/Java/JavaVirtualMachines/
 
-    sudo xattr -r -d com.apple.quarantine "${jvms_path}${graalvm_dir}"/Contents/Home
+    sudo xattr -r -d com.apple.quarantine "${jvms_path}${graalvm_dir}"
+    jenv add "${jvms_path}${graalvm_dir}"/Contents/Home/
 
-    echo 'Do not forget to update GRAALVM_HOME and run jenv add'
+    echo 'Do not forget to update GRAALVM_HOME'
 }
