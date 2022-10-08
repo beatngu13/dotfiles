@@ -24,6 +24,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 
 # Disable sound effects on boot.
 sudo nvram SystemAudioVolume=" "
+sudo nvram StartupMute=%01
 
 # Set up menu items.
 defaults write com.apple.systemuiserver menuExtras -array \
