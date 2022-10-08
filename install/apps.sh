@@ -30,42 +30,42 @@ brew install wget
 
 # Homebrew Cask apps.
 
-brew install adobe-acrobat-reader
-brew install chromedriver
-brew install discord
-brew install docker
-brew install dropbox
-brew install firefox
-brew install gimp
-brew install google-chrome
-brew install gpg-suite-no-mail
-brew install graalvm/tap/graalvm-ce-java17
-brew install insomnia
-brew install intellij-idea-ce
-brew install jd-gui
-brew install keepassxc
-brew install keka
-brew install libreoffice-still
-brew install logitech-options
-brew install maccy
-brew install mactex
-brew install monitorcontrol
-brew install rectangle
-brew install skype
-brew install slack
-brew install sourcetree
-brew install spotify
-brew install spotmenu
-brew install temurin
-brew install temurin17
-brew install temurin11
-brew install temurin8
-brew install tex-live-utility
-brew install vagrant
-brew install virtualbox
-brew install visual-studio-code
-brew install vlc
-brew install whatsapp
+brew install --cask adobe-acrobat-reader
+brew install --cask chromedriver
+brew install --cask discord
+brew install --cask docker
+brew install --cask dropbox
+brew install --cask firefox
+brew install --cask gimp
+brew install --cask google-chrome
+brew install --cask gpg-suite-no-mail
+brew install --cask graalvm/tap/graalvm-ce-java17
+brew install --cask insomnia
+brew install --cask intellij-idea-ce
+brew install --cask jd-gui
+brew install --cask keepassxc
+brew install --cask keka
+brew install --cask libreoffice-still
+brew install --cask logitech-options
+brew install --cask maccy
+brew install --cask mactex
+brew install --cask monitorcontrol
+brew install --cask rectangle
+brew install --cask skype
+brew install --cask slack
+brew install --cask sourcetree
+brew install --cask spotify
+brew install --cask spotmenu
+brew install --cask temurin
+brew install --cask temurin17
+brew install --cask temurin11
+brew install --cask temurin8
+brew install --cask tex-live-utility
+brew install --cask vagrant
+brew install --cask virtualbox
+brew install --cask visual-studio-code
+brew install --cask vlc
+brew install --cask whatsapp
 
 # Homebrew misc (require apps from above).
 
