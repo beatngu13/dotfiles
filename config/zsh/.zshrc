@@ -13,7 +13,7 @@ export EDITOR="${CONFIG_PATH}"/zsh/editor.sh
 export LANG=en_US.UTF-8
 
 # Set up path.
-export GRAALVM_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java17-22.1.0/Contents/Home/
+export GRAALVM_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java17-22.2.0/Contents/Home/
 export PATH=\
 "${PATH}":\
 "${GRAALVM_HOME}"
