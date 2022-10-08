@@ -117,12 +117,13 @@ defaults write com.apple.dock autohide -bool true
 # Hide recently used applications.
 defaults write com.Apple.Dock show-recents -bool false
 
+# See https://github.com/kcrawford/dockutil/issues/127.
 # Add favorite apps.
-dockutil --no-restart --add "/Applications/Firefox.app"
-dockutil --no-restart --add "/Applications/IntelliJ IDEA CE.app"
-dockutil --no-restart --add "/Applications/SourceTree.app"
-dockutil --no-restart --add "/Applications/Visual Studio Code.app"
-dockutil --no-restart --add "/Applications/WhatsApp.app"
+#dockutil --no-restart --add "/Applications/Firefox.app"
+#dockutil --no-restart --add "/Applications/IntelliJ IDEA CE.app"
+#dockutil --no-restart --add "/Applications/SourceTree.app"
+#dockutil --no-restart --add "/Applications/Visual Studio Code.app"
+#dockutil --no-restart --add "/Applications/WhatsApp.app"
 
 
 ################################################################################

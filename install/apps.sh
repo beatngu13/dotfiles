@@ -13,7 +13,8 @@ brew tap homebrew/cask-versions
 
 # Homebrew apps.
 
-brew install dockutil
+# See https://github.com/kcrawford/dockutil/issues/127.
+#brew install dockutil
 brew install geckodriver
 brew install git
 brew install graphviz
