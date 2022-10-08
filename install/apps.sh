@@ -47,6 +47,7 @@ brew install keepassxc
 brew install keka
 brew install libreoffice-still
 brew install logitech-options
+brew install maccy
 brew install mactex
 brew install monitorcontrol
 brew install rectangle
