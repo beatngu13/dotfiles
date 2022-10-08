@@ -15,6 +15,7 @@
 	rebase = true
 [rebase]
 	autostash = true
+	updateRefs = true
 [merge]
 	ff = false
 	conflictStyle = zdiff3
