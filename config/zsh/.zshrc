@@ -11,6 +11,8 @@ export EDITOR="${CONFIG_PATH}"/zsh/editor.sh
 
 # Set default language.
 export LANG=en_US.UTF-8
+# Set grep colors.
+export GREP_COLORS='mt=1;32'
 
 # Set up path.
 export GRAALVM_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java17-22.2.0/Contents/Home/
