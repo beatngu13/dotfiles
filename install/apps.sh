@@ -53,7 +53,6 @@ brew install --cask monitorcontrol
 brew install --cask rectangle
 brew install --cask skype
 brew install --cask slack
-brew install --cask sourcetree
 brew install --cask spotify
 brew install --cask spotmenu
 brew install --cask temurin
