@@ -42,9 +42,12 @@ defaults write com.apple.menuextra.battery ShowPercent YES
 # Disable "Are you sure you want to open this application?" dialog.
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-# Disable smart quotes and dashes.
+# Disable smart quotes.
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+# Disable smart dashes.
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+# Disable add period with double-space.
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
 
 
 ################################################################################
