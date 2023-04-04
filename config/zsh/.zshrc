@@ -15,7 +15,7 @@ export LANG=en_US.UTF-8
 export GREP_COLORS='mt=1;32'
 
 # Set up path.
-export GRAALVM_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java17-22.2.0/Contents/Home/
+export GRAALVM_HOME=/Library/Java/JavaVirtualMachines/graalvm-ce-java17-22.3.1/Contents/Home/
 export PATH=\
 "${PATH}":\
 "${GRAALVM_HOME}"
