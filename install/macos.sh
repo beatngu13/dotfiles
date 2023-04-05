@@ -80,7 +80,7 @@ defaults write com.apple.touchbar.agent PresentationModeGlobal -string "function
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-# Save screenshots to the desktop.
+# Save screenshots to custom directory.
 defaults write com.apple.screencapture location -string "${HOME}/Downloads/"
 
 # Disable shadow in screenshots.
