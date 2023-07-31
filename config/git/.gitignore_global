@@ -13,3 +13,6 @@ target/
 
 # jEnv Java version.
 .java-version
+
+# Quarkus CLI files.
+.quarkus/
