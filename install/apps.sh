@@ -9,6 +9,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew tap homebrew/cask-drivers
 brew tap homebrew/cask-versions
 brew tap nektos/tap
+brew tap quarkusio/tap
 
 # TODO Use brew install "${brew_apps[@]}" without abort or Brewfile (see https://github.com/holman/dotfiles/).
 
@@ -26,6 +27,7 @@ brew install neofetch
 brew install pandoc
 brew install pdfgrep
 brew install python@2
+brew install quarkus
 brew install tree
 brew install wget
 
