@@ -83,6 +83,6 @@ mas install 497799835
 # Prime Video
 mas install 545519333
 
-# Manuall installation.
+# Manual installation.
 
 # AusweisApp2
