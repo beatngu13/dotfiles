@@ -8,6 +8,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew tap homebrew/cask-drivers
 brew tap homebrew/cask-versions
+brew tap nektos/tap
 
 # TODO Use brew install "${brew_apps[@]}" without abort or Brewfile (see https://github.com/holman/dotfiles/).
 
@@ -15,6 +16,7 @@ brew tap homebrew/cask-versions
 
 # See https://github.com/kcrawford/dockutil/issues/127.
 #brew install dockutil
+brew install act
 brew install geckodriver
 brew install git
 brew install graphviz
@@ -24,7 +26,6 @@ brew install neofetch
 brew install pandoc
 brew install pdfgrep
 brew install python@2
-brew install nektos/tap/act
 brew install tree
 brew install wget
 
