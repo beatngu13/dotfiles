@@ -45,7 +45,6 @@ brew install --cask google-chrome
 brew install --cask gpg-suite-no-mail
 brew install --cask insomnia
 brew install --cask intellij-idea-ce
-brew install --cask jd-gui
 brew install --cask keepassxc
 brew install --cask keka
 brew install --cask libreoffice-still
