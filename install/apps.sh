@@ -20,6 +20,7 @@ brew tap quarkusio/tap
 brew install act
 brew install geckodriver
 brew install git
+brew install git-lfs
 brew install graphviz
 brew install jenv
 brew install mas
