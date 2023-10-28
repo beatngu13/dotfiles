@@ -42,7 +42,6 @@ brew install --cask firefox
 brew install --cask gimp
 brew install --cask google-chrome
 brew install --cask gpg-suite-no-mail
-brew install --cask graalvm/tap/graalvm-ce-java17
 brew install --cask insomnia
 brew install --cask intellij-idea-ce
 brew install --cask jd-gui
