@@ -29,6 +29,13 @@ if which jenv >/dev/null; then
     eval "$(jenv init -)"
 fi
 
+# Set up gcloud.
+source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+
+# Set up kubectl.
+source <(kubectl completion zsh)
+
 # Set up Oh My ZSH.
 export ZSH="${HOME}"/.oh-my-zsh
 
