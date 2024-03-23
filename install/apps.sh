@@ -62,7 +62,6 @@ brew install --cask slack
 brew install --cask spotify
 brew install --cask spotmenu
 brew install --cask temurin
-brew install --cask temurin17
 brew install --cask temurin11
 brew install --cask temurin8
 brew install --cask tex-live-utility
