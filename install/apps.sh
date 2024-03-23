@@ -8,6 +8,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew tap homebrew/cask-drivers
 brew tap homebrew/cask-versions
+brew tap graalvm/tap
 brew tap nektos/tap
 brew tap quarkusio/tap
 
@@ -45,6 +46,7 @@ brew install --cask gimp
 brew install --cask google-chrome
 brew install --cask google-cloud-sdk
 brew install --cask gpg-suite-no-mail
+brew install --cask graalvm-jdk17
 brew install --cask insomnia
 brew install --cask intellij-idea-ce
 brew install --cask keepassxc
