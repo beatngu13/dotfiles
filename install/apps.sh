@@ -20,6 +20,7 @@ brew tap quarkusio/tap
 #brew install dockutil
 brew install act
 brew install geckodriver
+brew install gh
 brew install git
 brew install git-lfs
 brew install graphviz
