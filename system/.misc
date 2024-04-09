@@ -9,8 +9,6 @@ function rmc() {
 
 # Update Homebrew and Mac App Store.
 function update_all() {
-    sudo -v
-
     echo 'Update Homebrew ...'
     brew update
     brew upgrade
