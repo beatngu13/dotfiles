@@ -6,8 +6,6 @@
 	excludesfile = ~/.gitignore_global
 [credential]
 	helper = osxkeychain
-[init]
-	defaultBranch = master
 [fetch]
 	prune = true
 	pruneTags = true
