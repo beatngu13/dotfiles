@@ -19,6 +19,8 @@
 	conflictStyle = zdiff3
 [commit]
 	gpgsign = true
+[push]
+	autoSetupRemote = true
 [stash]
 	showPatch = true
 [tag]
