@@ -1,11 +1,13 @@
 [user]
 	name = Daniel Kraus
 	email = daniel.kraus@mailbox.org
-	signingkey = D9CF93250109D5A2
+	signingkey = ~/.ssh/id_rsa.pub
 [core]
 	excludesfile = ~/.gitignore_global
 [credential]
 	helper = osxkeychain
+[gpg]
+	format = ssh
 [fetch]
 	prune = true
 	pruneTags = true
