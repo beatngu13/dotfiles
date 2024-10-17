@@ -1,16 +1,8 @@
 #!/usr/bin/env sh
 
-# Use JShell with Java 11.
-function jshell() {
-    ~/.jenv/versions/11.0/bin/jshell
-}
-
 # Use JShell with Java 11 in current Maven project.
 function mvn_jshell() {
-    java_version_backup="$(jenv version-name)"
-    jenv shell 11.0
     mvn jshell:run -DtestClasspath
-    jenv shell "${java_version_backup}"
 }
 
 # Trigger Maven release.
